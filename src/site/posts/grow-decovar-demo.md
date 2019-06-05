@@ -1,5 +1,5 @@
 ---
-title: Grow Demo
+title: Grow Decovar Demo
 FontName: Decovar
 Creator: David Berlow
 Publisher: Font Bureau
