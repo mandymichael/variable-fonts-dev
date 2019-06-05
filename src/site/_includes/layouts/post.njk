@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+pageClass: posts
+templateEngineOverride: njk, md
+---
+
+<style>{% include css %}</style>
+
+<section>
+    <p contenteditable data-text="{{demoText}}" class="demo">{{demoText}}</p>
+</section>
+
+<section class="details">
+    <div>
+    <p>{{ FontName }} by {{ Creator }} is {{ Licensing }},
+        <a href="{{download}}" target="_blank">{% if (Licensing === 'Open source') %}download{% else %}purchase{% endif %} from {{ DownloadSource }}.</a>
+    </p>
+    <p>View the code by {% if (developerTwitter) %}<a href="https://twitter.com/{{developerTwitter}}" target="_blank"><em>{{ developer }}</em></a> {% else %}<em>{{ developer }}</em>{% endif %} on <a href="{{ Codepen }}">Codepen</a></p>
+    </div>
+    <button id="toggle">Toggle Animation</button>
+</section>
+
+<main class="post">
+    {{content | safe}}
+</main>

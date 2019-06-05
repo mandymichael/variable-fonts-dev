@@ -1,0 +1,79 @@
+@import '_variables';
+@import '_mixins';
+
+@font-face {
+	font-family: 'IBM Plex';
+    src: url('/fonts/IBMPlexSansVar-Roman.woff2');
+    font-weight: 100 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-moz-selection {
+    background-color: $text-color;
+    color: $page-color;
+}
+::selection {
+    background-color: $text-color;
+    color: $page-color;
+}
+
+html {
+    background-color: $accent-color;
+    font-size: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: $fontBody;
+    font-size: 100%;
+    font-weight: 353;
+    line-height: 1.8;
+    text-align: center;
+    color: rgba( white, 0.9);
+    background: linear-gradient(135deg, #3a53e9, #7f57ee);
+}
+
+a {
+    color: $text-color;
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+    color: $accent-color;
+}
+
+h1, h2, h3 {
+    font-family: $fontHeading;
+    font-weight: 700;
+    line-height: 1;
+    margin: calcRem($spacing-2) 0;
+    color: currentColor;
+}
+
+
+h1 {
+    font-size: calcRem($fontScale-7);
+    font-weight: 100;
+    margin-top: calcRem($spacing-7);
+    margin-bottom: calcRem($spacing-2);
+    line-height: 1;
+    border-bottom: 2px solid currentColor;
+    padding-bottom: calcRem($spacing-1);
+}
+
+h2 {
+    font-size: calcRem($fontScale-5);
+    margin: calcRem($spacing-1) 0;
+}
+
+h3 {
+    text-transform: uppercase;
+    margin-top: calcRem($spacing-6);
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+}

@@ -1,0 +1,95 @@
+.demo {
+
+    font-size: 100px;
+
+    @media screen and (min-width: 430px) {
+        font-size: 150px;
+    }
+
+    @media screen and (min-width: 700px) {
+        font-size: 200px;
+    }
+}
+
+.post {
+    background: white;
+    padding: calcRem($spacing-1);
+    color: black;
+
+    p {
+        margin-bottom: calcRem($spacing-2);
+        line-height: 1.5;
+    }
+
+    :not(pre) > code {
+        background: ghostwhite;
+        border: 1px solid gainsboro;
+        border-radius: 3px;
+        padding: 0 2px;
+    }
+
+    @media screen and (min-width: 700px) {
+        padding: calcRem($spacing-6);
+    }
+}
+
+.details {
+    text-align: left;
+    position: relative;
+    margin: calcRem($spacing-6) 0;
+    border-top: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    padding: calcRem($spacing-4) 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    line-height: 1.2;
+
+    p + p {
+        margin-top: calcRem($spacing-2);
+    }
+
+    a {
+        display: inline-block;
+        padding: 0 2px;
+        transition: background 150ms ease;
+        background: transparent;
+    }
+
+    a:hover, a:focus {
+        background: darkslategrey;
+        color: white;
+    }
+}
+
+
+#toggle {
+	border: 2px solid currentColor;
+	background: transparent;
+	padding: 10px;
+	color: currentColor;
+	font-size: 12px;
+	text-transform: uppercase;
+    flex-grow: 0;
+    cursor: pointer;
+    align-self: center;
+
+	&:hover, &:focus {
+		background: darkslategrey;
+		color: white;
+	}
+
+	&:active {
+		transform: translate(0, 2px);
+	}
+}
+
+.no-animation .demo {
+	animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .demo {
+        animation: none;
+    }
+}

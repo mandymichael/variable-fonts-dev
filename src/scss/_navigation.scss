@@ -1,0 +1,36 @@
+@import '_variables';
+
+nav {
+    margin-bottom: calcRem($spacing-2);
+}
+
+.nav {
+    padding-top: calcRem($spacing-3);
+
+    li {
+        display: inline;
+    }
+
+    a {
+        display: inline-block;
+        padding-bottom: calcRem($spacing-1) 0;
+        margin: 0 calcRem($spacing-1);
+        width: 8em;
+        text-align: left;
+        color: mix($text-color,$page-color, 80%);
+        text-decoration: none;
+        font-weight: 700;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+
+    small {
+        display: block;
+        font-size: calcRem($fontScale-1);
+        color: mix($text-color,$page-color, 60%);
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>{% include "css/main.css" %}</style>
+    <title>{{ title }}</title>
+  </head>
+  <body class="{{ bodyClass }}" >
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="nav">
+                    <li><a href="/">home</a></li>
+                    <li><a href="/about">about</a></li>
+                </ul>
+            </nav>
+            <h1>{{ title }}</h1>
+        </header>
+
+        {{ content | safe }}
+
+        {% include "footer.njk" %}
+        <script>{% include "js/scripts.js" %}</script>
+    </div>
+  </body>
+</html>
+
+
+

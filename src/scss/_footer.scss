@@ -1,0 +1,21 @@
+@import '_variables';
+
+footer {
+    margin-top: calcRem($fontScale-7);
+    padding: calcRem($fontScale-4) 0;
+    border-top: solid 1px currentColor;
+    font-size: calcRem($fontScale-1);
+    color: currentColor;
+
+    a {
+        color: currentColor;
+        border-bottom: solid 1px currentColor;
+
+        a:hover,
+        a:focus {
+            background: darkslategrey;
+            color: white;
+            border-bottom: solid 1px white;
+        }
+    }
+}
