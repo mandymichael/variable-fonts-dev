@@ -1,5 +1,5 @@
 ---
-title: Grow Decovar Demo
+title: Stripe Decovar Demo
 FontName: Decovar
 Creator: David Berlow
 Publisher: Font Bureau
@@ -8,15 +8,15 @@ Release: 2017-02-07
 Licensing: Open source
 Download: https://github.com/TypeNetwork/Decovar
 DownloadSource: github
-demoText: grow
-css: css/grow.css
-Codepen: https://codepen.io/mandymichael/pen/YYaWop
+demoText: Hello
+css: css/stripe-decovar.css
+Codepen: https://codepen.io/mandymichael/pen/dJZQaz
 developer: Mandy Michael
 developerTwitter: Mandy_Kerr
-featureColor: 699f39
-featureColorReverse: fff
-featureColorAccent: a8b849
-date: 2019-04-01
+featureColor: f5f5f5
+featureColorReverse: 717171
+featureColorAccent: ff0
+date: 2019-05-08
 ---
 
 

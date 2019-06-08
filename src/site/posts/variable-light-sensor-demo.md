@@ -1,22 +1,22 @@
 ---
-title: Grow Decovar Demo
-FontName: Decovar
-Creator: David Berlow
-Publisher: Font Bureau
-Characters: Latin (limited)
-Release: 2017-02-07
+title: Variable Light Sensor Demo
+FontName: Tiny
+Creator: Jack Halten Fahnestock
+Publisher: Velvetyne Type Foundry
+Characters: Latin, Dingbats,emoji
+Release: 2019-04-04
 Licensing: Open source
-Download: https://github.com/TypeNetwork/Decovar
-DownloadSource: github
-demoText: grow
-css: css/grow.css
+Download: https://velvetyne.fr
+DownloadSource: https://velvetyne.fr
+demoText: Light it up
+css: css/light.css
 Codepen: https://codepen.io/mandymichael/pen/YYaWop
 developer: Mandy Michael
 developerTwitter: Mandy_Kerr
-featureColor: 699f39
-featureColorReverse: fff
-featureColorAccent: a8b849
-date: 2019-04-01
+featureColor: 1d1c41
+featureColorAccent: e2744c
+featureColorReverse: 8a8cca
+date: 2019-05-22
 ---
 
 

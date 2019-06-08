@@ -6,16 +6,24 @@
     <style>{% include "css/main.css" %}</style>
     <title>{{ title }}</title>
   </head>
-  <body class="{{ bodyClass }}" >
+
+  {% set lastItem = collections.post | length %}
+
+  <body class="{{ bodyClass }}" style="
+    --bg-color: #{{collections.post[lastItem - 1].data.featureColor}};
+    --bg-color-end: #{{collections.post[0].data.featureColor}};
+    --featureColorAccent: #{{collections.post[lastItem - 1].data.featureColorAccent}}; --featureColorReverse: #{{collections.post[lastItem - 1].data.featureColorReverse}}">
     <div>
         <header>
             <nav>
                 <ul class="nav">
                     <li><a href="/">home</a></li>
+                    <li><a href="/getting-started">getting started</a></li>
+                    <li><a href="/resources">resources</a></li>
                     <li><a href="/about">about</a></li>
                 </ul>
             </nav>
-            <h1>{{ title }}</h1>
+            <h1 class="site-title" data-heading="{{title}}">{{ title }}</h1>
         </header>
 
         {{ content | safe }}
