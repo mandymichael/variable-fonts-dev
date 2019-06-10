@@ -1,19 +1,19 @@
 ---
 layout: layouts/base.njk
-pageClass: posts
+bodyClass: posts
 templateEngineOverride: njk, md
 ---
 
 <style>{% include css %}</style>
 
 <section>
-    <p contenteditable data-text="{{demoText}}" class="demo">{{demoText}}</p>
+    <p contenteditable data-text="{{demoText}}" class="demo" id="demoText">{{demoText}}</p>
 </section>
 
 <section class="details">
     <div>
     <p>{{ FontName }} by {{ Creator }} is {{ Licensing }},
-        <a href="{{download}}" target="_blank">{% if (Licensing === 'Open source') %}download{% else %}purchase{% endif %} from {{ DownloadSource }}.</a>
+        <a href="{{DownloadSource}}" target="_blank">{% if (Licensing === 'Open source') %}download{% else %}purchase{% endif %} from {{ Download }}</a>
     </p>
     <p>View the code by {% if (developerTwitter) %}<a href="https://twitter.com/{{developerTwitter}}" target="_blank"><em>{{ developer }}</em></a> {% else %}<em>{{ developer }}</em>{% endif %} on <a href="{{ Codepen }}">Codepen</a></p>
     </div>
@@ -23,3 +23,12 @@ templateEngineOverride: njk, md
 <main class="post">
     {{content | safe}}
 </main>
+
+<section class="details">
+    <div>
+    <p>{{ FontName }} by {{ Creator }} is {{ Licensing }},
+        <a href="{{DownloadSource}}" target="_blank">{% if (Licensing === 'Open source') %}download{% else %}purchase{% endif %} from {{ Download }}</a>
+    </p>
+    <p>View the code by {% if (developerTwitter) %}<a href="https://twitter.com/{{developerTwitter}}" target="_blank"><em>{{ developer }}</em></a> {% else %}<em>{{ developer }}</em>{% endif %} on <a href="{{ Codepen }}">Codepen</a></p>
+    </div>
+</section>

@@ -1,11 +1,13 @@
 
 // Content Editable Demos
-var element = document.querySelector("p");
 
-element.addEventListener("input", function() {
-    this.setAttribute("data-text", this.innerText);
-});
+if (document.getElementById("demoText")) {
+    var element = document.getElementById("demoText");
 
+    element.addEventListener("input", function() {
+        this.setAttribute("data-text", this.innerText);
+    });
+}
 
 // Animation Toggle
 if ( document.getElementById('toggle')) {
@@ -17,9 +19,6 @@ if ( document.getElementById('toggle')) {
         }
     });
 }
-
-
-
 
 // Homepage Effect with gem font
 var homeHeadline = document.querySelector("h1");
@@ -49,6 +48,31 @@ function setPosition(e) {
 	fluidAxisVariation(minAxisValue, maxAxisValue, minEventValue, maxEventValue, e.pageX, "--axis", homeHeadline);
 	fluidAxisVariation(minAxisValue2, maxAxisValue2, minEventValue, maxEventValue, e.pageY, "--axis2", homeHeadline);
 }
+
+// Variable Light Sensor Demo
+function getLightSensor() {
+    const minAxisValue = 300;
+    const maxAxisValue = 20;
+
+    const minEventValue = 20;
+    const maxEventValue = 300;
+
+    element.style.setProperty("--axis", 20);
+
+    if ( 'AmbientLightSensor' in window ) {
+      const sensor = new AmbientLightSensor();
+      sensor.onreading = () => {
+         fluidAxisVariation(minAxisValue, maxAxisValue, minEventValue, maxEventValue, sensor.illuminance, "--axis", element);
+      };
+      sensor.onerror = (event) => {
+        console.log(event.error.name, event.error.message);
+      };
+      sensor.start();
+    }
+}
+
+getLightSensor();
+
 
 
 // Fluid Axis Variation

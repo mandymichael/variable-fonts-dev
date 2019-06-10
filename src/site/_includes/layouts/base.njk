@@ -9,7 +9,13 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{title}}">
     <meta property="og:url" content="https://variablefonts.dev/{{ page.data.title | replace(" ", "-") | lower}}">
-    <meta property="og:image" content="https://variablefonts.dev/images/{{ page.data.title | replace(" ", "-") | lower}}.png">
+
+    {% if (bodyClass) === 'home' %}
+        <meta property="og:image" content="https://variablefonts.dev/images/default-social.png">
+    {% else %}
+        <meta property="og:image" content="https://variablefonts.dev/images/{{ page.data.title | replace(" ", "-") | lower}}.png">
+    {% endif %}
+    <meta property="og:description" content="{{description}}">
     <meta property="article:author" content="{{developer}}">
   </head>
 
@@ -25,8 +31,9 @@
                 <ul class="nav">
                     <li><a href="/">Home</a></li>
                     <li><a href="/getting-started">Getting Started</a></li>
-                    {# <li><a href="/resources">resources</a></li>
-                    <li><a href="/about">about</a></li> #}
+                    <li><a href="/about">about</a></li>
+                    {# <li><a href="/resources">resources</a></li> #}
+
                 </ul>
             </nav>
             <h1 class="site-title" data-heading="{{title}}">{{ title }}</h1>

@@ -1,15 +1,10 @@
 ---
 title: Variable Fonts for Developers
-intro: Variable fonts are amazing - check out some examples of how you can use them.
 layout: layouts/home.njk
 bodyClass: home
+description: Variable fonts effects, examples and experiments for developers!
+developer: Mandy Michael
 ---
-<!--
-
-<p class="intro">
-    {{intro}}
-</p> -->
-
 
 <div class="listing">
 {% for page in collections.post | reverse %}

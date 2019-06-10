@@ -1,5 +1,19 @@
+$dividerColor:  rgba(255,255,255,0.5);
+
 .demo {
     font-size: 100px;
+    line-height: 1;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	letter-spacing: 0.6rem;
+	margin: 7rem 0;
+    position: relative;
+    text-transform: uppercase;
+    line-height: 1;
 
     @media screen and (min-width: 430px) {
         font-size: 150px;
@@ -44,10 +58,11 @@
     text-align: left;
     position: relative;
     margin: calcRem($spacing-6) auto;
-    border-top: 1px solid currentColor;
-    border-bottom: 1px solid currentColor;
+    border-top: 1px solid $dividerColor;
+    border-bottom: 1px solid $dividerColor;
     padding: calcRem($spacing-4) 0;
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: space-between;
     line-height: 1.2;
@@ -81,13 +96,14 @@
 #toggle {
 	border: 2px solid currentColor;
 	background: transparent;
-	padding: 10px;
+	padding: calcRem(10px);
 	color: currentColor;
-	font-size: 12px;
+	font-size: calcRem(12px);
 	text-transform: uppercase;
     flex-grow: 0;
     cursor: pointer;
     align-self: center;
+    margin: calcRem($spacing-2) 0 0 0;
 
 	&:hover, &:focus {
 		background: darkslategrey;

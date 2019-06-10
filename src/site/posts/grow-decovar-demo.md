@@ -16,7 +16,8 @@ developerTwitter: Mandy_Kerr
 featureColor: 699f39
 featureColorReverse: 234109
 featureColorAccent: a8b849
-date: 2019-04-01
+date: 2019-06-10
+description: Creating a Growing text effect using CSS, HTML and Variable fonts!
 ---
 
 
@@ -36,7 +37,7 @@ The basic animation with the variable font only requires one copy of the text, b
 First up we create our HTML element, I'm using a `h1`, but it can be whatever semantic text element you need.
 
 ``` html
-<h1 data-text="Grass">Grass</h1>
+<h1 data-text="Grow">Grow</h1>
 ```
 
 In this example I've included a `data-attribute` that will allow me to create a copy of the text to use as a new layer in my CSS.
