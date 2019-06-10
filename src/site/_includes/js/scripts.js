@@ -1,6 +1,5 @@
 
 // Content Editable Demos
-
 if (document.getElementById("demoText")) {
     var element = document.getElementById("demoText");
 
@@ -57,12 +56,14 @@ function getLightSensor() {
     const minEventValue = 20;
     const maxEventValue = 300;
 
-    element.style.setProperty("--axis", 20);
+    const sensorElement = document.getElementById("light-sensor");
+
+    sensorElement.style.setProperty("--axis", 20);
 
     if ( 'AmbientLightSensor' in window ) {
       const sensor = new AmbientLightSensor();
       sensor.onreading = () => {
-         fluidAxisVariation(minAxisValue, maxAxisValue, minEventValue, maxEventValue, sensor.illuminance, "--axis", element);
+         fluidAxisVariation(minAxisValue, maxAxisValue, minEventValue, maxEventValue, sensor.illuminance, "--axis", sensorElement);
       };
       sensor.onerror = (event) => {
         console.log(event.error.name, event.error.message);
@@ -71,9 +72,9 @@ function getLightSensor() {
     }
 }
 
-getLightSensor();
-
-
+if (document.getElementById("light-sensor")) {
+    getLightSensor();
+}
 
 // Fluid Axis Variation
 function fluidAxisVariation(minimumAxisValue, maximumAxisValue, minimumEventValue, maximumEventValue, eventValue, axisCustomPropertyName, element) {
@@ -97,4 +98,3 @@ function fluidAxisVariation(minimumAxisValue, maximumAxisValue, minimumEventValu
     element.style.setProperty(axisCustomPropertyName, newAxisValue);
 
 }
-

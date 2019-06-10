@@ -16,6 +16,7 @@ developerTwitter: Mandy_Kerr
 featureColor: 1d1c41
 featureColorAccent: e2744c
 featureColorReverse: 8a8cca
+demoId: light-sensor
 date: 2019-06-11
 description: An example of how a variable font can react based on input from web browser apis and sensors like the Ambient light sensor.
 ---
