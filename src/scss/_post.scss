@@ -1,5 +1,4 @@
 .demo {
-
     font-size: 100px;
 
     @media screen and (min-width: 430px) {
@@ -11,10 +10,18 @@
     }
 }
 
+.nav a {
+    color: white;
+}
+
 .post {
     background: white;
     padding: calcRem($spacing-1);
     color: black;
+    width: 95%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
 
     p {
         margin-bottom: calcRem($spacing-2);
@@ -36,7 +43,7 @@
 .details {
     text-align: left;
     position: relative;
-    margin: calcRem($spacing-6) 0;
+    margin: calcRem($spacing-6) auto;
     border-top: 1px solid currentColor;
     border-bottom: 1px solid currentColor;
     padding: calcRem($spacing-4) 0;
@@ -44,6 +51,13 @@
     align-content: center;
     justify-content: space-between;
     line-height: 1.2;
+    width: 95%;
+    max-width: calc(800px + #{$spacing-1 * 2});
+
+    @media screen and (min-width: 700px) {
+        max-width: calc(800px + #{$spacing-6 * 2});
+
+    }
 
     p + p {
         margin-top: calcRem($spacing-2);
@@ -52,8 +66,9 @@
     a {
         display: inline-block;
         padding: 0 2px;
-        transition: background 150ms ease;
+        transition: all 150ms ease;
         background: transparent;
+        color: black;
     }
 
     a:hover, a:focus {

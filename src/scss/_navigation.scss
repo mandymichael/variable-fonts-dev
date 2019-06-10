@@ -33,7 +33,7 @@ nav {
         &::after {
             content: "";
             width: 20px;
-            height: 3px;
+            height: 1px;
             background: $text-color;
             position: absolute;
             bottom: -10px;
@@ -43,18 +43,12 @@ nav {
 
         &:hover,
         &:focus {
+            color: white;
 
             &:after {
                 background: white;
                 width: 100%;
-
-
             }
-            // background: lighten($text-color, 15);
-            // color: var(--bg-color);
-            // border: 1px solid lighten($text-color, 8);
-
-
         }
     }
 
