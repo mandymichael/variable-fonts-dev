@@ -14,7 +14,7 @@ Codepen: https://codepen.io/mandymichael/pen/YYaWop
 developer: Mandy Michael
 developerTwitter: Mandy_Kerr
 featureColor: 699f39
-featureColorReverse: fff
+featureColorReverse: 234109
 featureColorAccent: a8b849
 date: 2019-04-01
 ---
@@ -23,9 +23,13 @@ date: 2019-04-01
 {% block content %}
 ## Making the Grow Demo
 
+This was one of the first demos I created - my goal was to create a text effect that made it look like the text was "growing" without the need for SVG or canvas.
+
 Like all variable font effects this demo is only possible because {{ FontName }} contains the axis I need in order to create the "leafy" look.
 
 ### The HTML
+
+Before getting into the nitty gritty I highly recommend you read the [Getting Started](/getting-started) page, which covers the basics of using variable fonts.
 
 The basic animation with the variable font only requires one copy of the text, but in order to create the texture we are going to need an additional copy.
 
@@ -41,21 +45,14 @@ In this example I've included a `data-attribute` that will allow me to create a 
 
 Now for the fun part! We'll set the base variable font effect up first.
 
-We can use `@font-face` the same way we are used to, by defining the `font-family` and the `src`. Then we can add styles to the `h1` we set up in our HTML.
-
 ``` css
-@font-face {
-	font-family: 'Decovar';
-	src: url('/Decovar.woff2');
-}
-
 h1 {
 	font-family: "Decovar";
 	font-variation-settings: 'INLN' 1000, 'SWRM' 1000;
 }
 ```
 
-The key part of the `h1` styles is how we define the `font-variation-settings`, this is a special CSS property added to make the most of different custom axis available in variable fonts. I am using two custom axis, the first is called "Inline" and is represented by the code `INLI` and the second is "Skeleton Worm" represented by the code `SWRM`. Each having their own associated number value representing a point along the axis.
+For this effect I'm using two custom axis, the first is called "Inline" and is represented by the code `INLI` and the second is "Skeleton Worm" represented by the code `SWRM`. Each having their own associated number value representing a point along the axis.
 
 For both Inline and Skeleton Worm the maximum value is `1000` and the minimum value is `0`, for the purposes of this demo we'll start at the maximum values.
 
@@ -122,7 +119,7 @@ h1::before {
 }
 ```
 
-These are all the elements we need in order to create the effect. Most of the hard work is done by the font itself!
+These are all the elements we need in order to create the effect as you can see most of the hard work is done by the font itself so be sure to thank your Type Designers by buying their fonts!
 
 Have fun and enjoy!
 
