@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>{% include "css/main.css" %}</style>
     <title>{{ title }}</title>
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:url" content="/posts/{{ page.data.title | replace(" ", "-") | lower}}">
+    <meta property="og:image" content="/images/{{ page.data.title | replace(" ", "-") | lower}}.png">
+    <meta property="article:author" content="{{developer}}">
   </head>
 
   {% set lastItem = collections.post | length %}
