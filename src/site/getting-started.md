@@ -74,3 +74,67 @@ h1 {
 ```
 
 We can check for `font-variation-settings` support and add our variable font styles inside the css block, with our standard fonts used in the unsupported browsers.
+
+### Using JavaScript
+
+JavaScript will allow us to access different browser and web api's to manipulate the font axis. We can start to design our typography to adjust to things like screen width, the gyroscope, light sensors, scroll position, mouse position and more.
+
+
+Using a straightforward example, let’s say we wanted to match our font weight to the size of our viewport - as the viewport gets smaller the font weight gets heavier.
+
+The problem with this is that we might have a font weight range of say 200 to 900 and a viewport size range of 320px to 1440px.
+
+We need to align these two sets of values, which are not only different ranges, but also different measurements. As a result we need to re-adjust the scales into something more usable.
+
+Let's get started using this example. First we need the current viewport width, which we can access with something like `window.innerWidth`
+
+```js
+const windowWidth = window.innerWidth
+```
+
+Then we create the new scale for the viewport, so rather than the pixels values we need to convert it to a range of 0 - 0.99.
+
+We do this by taking the current `windowWidth - minWindowSize` and divide that by the `maxWindowSize - minWindowSize`.
+
+This will output a value from 0 - 0.99 which we can use in our calculations.
+
+```js
+const windowSize = (currentSize - minSize) / (maxSize - minSize)
+// Outputs a value from 0 - 0.99 including decimal places
+```
+
+We can then take that new viewport decimal value and use that to determine the font weight based on the window size.
+
+```js
+const fontWeight = windowSize * (minWeight - maxWeight) + maxWeight;
+// Outputs a value from 200 - 900 including decimal places
+// For example: 0.66 * ( 200 - 900) + 900
+```
+
+Once we have that value we can make use of CSS Custom Properties to update the value of our weight axis in the `font-weight` property in the CSS. If you were using a custom axis, you would update the value in the `font-variation-settings` property.
+
+```js
+p.style.setProperty("--weight", fontWeight);
+```
+
+Putting it all together into a function we can check for the window resize event and update whenever needed.
+
+In it’s simplest form, this will give us our fluid variation attached to viewport width.
+
+```js
+function fluidAxisVariation() {
+  // Current viewport width
+  const windowWidth = window.innerWidth
+
+  // Get new scales for viewport and font weight
+  const viewportScale = (windowWidth - 320) / (1440 - 320);
+  const fontWeightScale = viewportScale * (200 - 900) + 900;
+
+  // Set in CSS using CSS Custom Property
+  element.style.setProperty("--weight", fontWeightScale);
+}
+
+window.addEventListener("resize", fluidAxisVariation);
+```
+
+This code can be used to change any axis, once you have it, you simply pass different event values to create all sorts of interactive effects. Some examples include [Ambient Light Sensor Demo](/posts/light-sensor-demo).
