@@ -54,7 +54,6 @@ h1 {
 	font-family: 'TINY';
 	font-weight: var(--axis);
 }
-
 ```
 Importantly I have set up a CSS Custom Property called `--axis` with a default value of `20` (which is the lowest value of the weight axis of {{FontName}}). This will become important later as it will allow us to update the value of our axis using JavaScript. As we are using the `wght` axis for this effect we can make use of the `font-weight` property instead of `font-variation-settings` (You should always use the mapped CSS properties when they are available).
 
@@ -65,11 +64,11 @@ In order to access the Ambient Light Sensor we will make use of a little bit of 
 Initially we need to set up a few bits of information about the axis we want to affect and the event we want to use (in this case the Ambient Sensor API).
 
 ```js
-    const minAxisValue = 20;
-    const maxAxisValue = 300;
+const minAxisValue = 20;
+const maxAxisValue = 300;
 
-    const minEventValue = 0;
-    const maxEventValue = 1000;
+const minEventValue = 0;
+const maxEventValue = 1000;
 ```
 
 Firstly we need to know what our minimum and maximum axis value will be. The Axis value determines the lowest value and highest value you want to use on the Variable Fonts Axis, in this case I'm using the full range that {{FontName}} has to offer which is `20 - 300`, but you can choose any value along the axis.
@@ -101,7 +100,7 @@ For this demo we'll pass in our minimum and maximum event and minimum and maximu
 Passing the values in manually it would look something like the following code:
 
 ```js
-   fluidAxisVariation(20, 300, 0, 1000, sensor.illuminance, "--axis", document.getElementById("demoText"));
+fluidAxisVariation(20, 300, 0, 1000, sensor.illuminance, "--axis", document.getElementById("demoText"));
 ```
 
 Finally we tell the sensor to start with the `sensor.start()` method.
