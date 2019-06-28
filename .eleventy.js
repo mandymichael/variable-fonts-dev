@@ -17,6 +17,11 @@ module.exports = function(config) {
       zone: "utc"
     }).toFormat(format);
   });
+  config.addFilter("dateDisplayRFC2822", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {
+      zone: "utc"
+    }).toRFC2822();
+  });
 
   // minify the html output
   config.addTransform("htmlmin", require("./src/utils/minify-html.js"));
