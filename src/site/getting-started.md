@@ -75,10 +75,11 @@ h1 {
 
 We can check for `font-variation-settings` support and add our variable font styles inside the css block, with our standard fonts used in the unsupported browsers.
 
-### Using JavaScript
+### Using JavaScript (optional)
 
-JavaScript will allow us to access different browser and web api's to manipulate the font axis. We can start to design our typography to adjust to things like screen width, the gyroscope, light sensors, scroll position, mouse position and more.
+JavaScript is not necessary for the use of Variable Fonts, like standard fonts we only need CSS in order to implement them in our sites. However if you want to link your variable fonts to JavaScript events you will need JavaScript to do that.
 
+JavaScript allows us to access different browser and web api's to manipulate the font axis. We can start to design our typography to adjust to things like the gyroscope, light sensors, scroll position, mouse position and more.
 
 Using a straightforward example, let’s say we wanted to match our font weight to the size of our viewport - as the viewport gets smaller the font weight gets heavier.
 
