@@ -124,6 +124,7 @@ h1 {
     font-variation-settings: "wght" var(--axis);
     position: relative;
     color: var(--featureColorAccent);
+    transform: translateY(2rem);
 
     @media screen and (min-width: 450px) {
         font-size: calcRem(80px);

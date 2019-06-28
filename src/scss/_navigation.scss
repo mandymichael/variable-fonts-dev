@@ -11,6 +11,7 @@ nav {
     padding-top: calcRem($spacing-3);
     list-style: none;
     display: flex;
+    z-index: 2;
 
     li {
         margin: 0 calcRem($spacing-2);
@@ -18,7 +19,6 @@ nav {
     }
 
     a {
-        // padding: calcRem($spacing-1);
         text-align: left;
         color: $text-color;
         text-decoration: none;

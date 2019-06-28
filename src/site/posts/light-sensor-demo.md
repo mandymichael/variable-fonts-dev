@@ -10,7 +10,7 @@ Download: velvetyne.fr
 DownloadSource: https://velvetyne.fr
 demoText: Light it up
 css: css/light.css
-Codepen: https://codepen.io/mandymichael/pen/YYaWop
+Codepen: https://codepen.io/mandymichael/pen/Mdoxpg
 developer: Mandy Michael
 developerTwitter: Mandy_Kerr
 featureColor: 1d1c41
