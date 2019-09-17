@@ -83,6 +83,36 @@ h1 {
 
 With this code, when you switch between dark and light mode the text will transition between "oozing" and standard text. If you want to try this out, the <a href="https://codepen.io/mandymichael/pen/xQxvPG">code demo</a> is available on Codepen.
 
+### Oozy CSS styles
+
+In order to make it look slimey, there are really only two main css properties that accomplish the effect: `opacity` and `text-shadow`.
+
+```css
+opacity: 0.8;
+	color: transparent;
+	text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 25px rgba(#3f6c12, 1);
+```
+
+The opacity is to give the text that jelly look, where it's semi-translucent. It's really the text shadows that do all the work here. I'm a big fan of text shadows, you can create all sorts of great effects with them and in this case the text shadow gives the slime a bit of a shine and glow around the edges.
+
+The second part is creating the layers, I'm accomplishing this using `pseudo-elements` but you can also do this with some `spans`. The layers are used to give the effect some depth, the first is just to add some extra colour, and the second is to make use of another text shadow. What these accomplish is to give the text some "consistency".
+
+```css
+	h1::before {
+        ...
+		z-index: -1;
+		color: #7ebf28;
+	}
+
+	h1::after {
+        ...
+		z-index: 1;
+		text-shadow: 2px 2px 5px rgba(#2a4308, 0.4);
+    }
+```
+
+You can see the full implementation in the [Codepen]({{Codepen}}) example.
+
 Have fun and make cool things.
 
 Mandy
