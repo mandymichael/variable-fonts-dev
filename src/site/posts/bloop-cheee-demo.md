@@ -15,7 +15,7 @@ Codepen: https://codepen.io/mandymichael/pen/LJeZBO
 developer: Mandy Michael
 developerTwitter: Mandy_Kerr
 featureColor: 3d709c
-featureColorReverse: 1c2d7e
+featureColorReverse: defff5
 featureColorAccent: 26d0ce
 date: 2019-09-17
 description: Creating an on scroll variable font effect using Chee by OH no Type Co.
@@ -31,43 +31,46 @@ The effect I am going for here is inspired by being underwater, as the text scro
 
 To get started we set up our base HTML and CSS including a few css custom properties. The custom properties are a really important part of this process as they are what we will update over in our JS to change the values of the variable font axis.
 
+It took me a really long time to figure out what text I wanted in this example. Words matter! Never underestimate the power a word can have on your effect!
 
 ``` html
 <h1>Bloop</h1>
 ```
-(It took me a really long time to figure out what text I wanted in this example. Words matter!)
+
+In the CSS below I have two axes, `--axis` and `-pos` the axis variable will change the value of both axes in the variable font (more on this later) and the pos variable will update the top offset of the text, this will allow the text to look like it's "falling" as we scroll.
 
 ``` css
 h1 {
 	--axis: 0;
 	--pos: 0;
 	font-family:'Cheee';
-	font-variation-settings: "yest" var(--axis), "gvty" var(--axis);
+    font-variation-settings: "yest" var(--axis), "gvty" var(--axis);
+    top: var(--pos);
 }
 ```
 Over in our JavaScript we'll set up the code needed to hook into the scroll event.
 
 ### Accessing the Scroll position
 
+Like our [Ambient Light Sensor](/light-sensor-demo) example we need to set up a few bits of information about the axis we want to affect and the event we want to use. In our case that is the min and max values for both axes in Chee, because they have the same range and we want to make use of the same range, we can just use one value instead of defining two, which keeps things simple.
 
-Like our [Ambient Light Sensor](/light-sensor-demo) example we need to set up a few bits of information about the axis we want to affect and the event we want to use.
+We also need to specify the min and max scroll position, which is 0% from the top, to 100% from the top. I've specifed these as numbers in our code to make it easier to do some math, we convert it back to a percentage later on in the code.
 
 ```js
-const maxGravity = 1000;
-const minGravity = 0;
+const maxAxis = 1000;
+const minAxis= 0;
 
 const posTop = 0;
 const posBottom = 100;
 ```
 
-Next we'll add an Event Listener to check for scroll, inside the event listener we'll get the current scroll position.
+Next we'll add an Event Listener to check for scroll and determine the users current scroll position.
 
-This code is essentially the function that I wrote for generic access to variable font axes via JavaScript, you can read about it on the [Getting Started](/getting-started) page or find the source on [Github](https://github.com/mandymichael/fluid-axis-variation-events).
+The code I am using is essentially the function that I wrote for generic access to variable font axes via JavaScript, you can read about it on the [Getting Started](/getting-started) page or find the source on [Github](https://github.com/mandymichael/fluid-axis-variation-events).
 
-The code below will convert the scroll position into a decimal which we can use to calculate two new values to pass into our css. One for the font axis (we can use the same value because they have the same axis min and max values) and one to calculate the top offset of the text so it looks like it's "falling" down the page as we scroll.
+The code below will convert the scroll position into a decimal which we can use to calculate two new values to pass into our css. As I mentioned earlier this will be one for the two font axis and one to calculate the top offset of the text.
 
 ```js
-
 var text = document.querySelector("h1");
 
 window.addEventListener("scroll", function(e) {
@@ -81,7 +84,27 @@ window.addEventListener("scroll", function(e) {
 })
 ```
 
-The last step is updating the CSS Custom Properties so that our CSS has access to the new values. We do this by using the `setProperty` method interface, which will set a new value for a property in our CSS.
+We access the scroll position by using the `scrollTop` property for the element and the body. This will get the number of pixels that the element or body has scrolled vertically. For this example we'll add the element's `scrollTop` value to the body's `scrollTop` value and then we'll divde that bu the elements `scrollHeight` value minus it's `clientHeight` value.
+
+```js
+	var scrollPosition = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+```
+
+The `scrollHeight` is essentially the height of all the elements content, including padding (whether it's visible or not) and the `clientHeight` which is the inner height of an element including padding but not borders, margins etc.
+
+This will give us an accurate position for the top of the text element to shift it down the page.
+
+The next step is to convert the position value to a decimal, so we can use it to normalise the axis values and link them together. This then allows us to multiple the new position value by the the max axis value and minus the min axis value, providing us with a number along our axis scale linked to the viewport scroll position.
+
+The same applies to the position, but instead of minusing the top position value we'll add it instead so it looks like it's moving down the page.
+
+```js
+	const position = scrollPosition / 0.99;
+	const axisScale = position * maxGravity - minGravity;
+	const positionScale = position * posBottom + posTop;
+```
+
+The last step is updating the CSS Custom Properties so that our CSS has access to the new values. We do this by using the `setProperty` method, which will set a new value for a property in our CSS.
 
 ```js
   text.style.setProperty("--axis", axisScale);
