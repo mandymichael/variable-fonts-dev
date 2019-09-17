@@ -4,31 +4,34 @@ bodyClass: posts
 templateEngineOverride: njk, md
 ---
 
-<style>{% include css %}</style>
+{% if css %}<style>{% include css %}</style>{% endif %}
+{% if demoType === 'standard' %}<button id="toggle">Toggle Animation</button>{% endif %}
 
 <section>
-    <p contenteditable data-text="{{demoText}}" class="demo" id="{{demoId}}">{{demoText}}</p>
+{% if (demoType === 'standard') or (demoType === 'standard-animation') %}
+<p contenteditable data-text="{{demoText}}" class="demo" id="{{demoId}}">{{demoText}}</p>
+{% elseif (demoType === 'video') %}
+<div class="video-wrapper">
+<div class="video">
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/pas474Bh0iQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+{% else %}
+<p>something else</p>
+{% endif %}
 </section>
 
-<section class="details">
-    <div>
-    <p>{{ FontName }} by {{ Creator }} is {{ Licensing }},
-        <a href="{{DownloadSource}}" target="_blank">{% if (Licensing === 'Open source') %}download{% else %}purchase{% endif %} from {{ Download }}</a>
-    </p>
-    <p>View the code by {% if (developerTwitter) %}<a href="https://twitter.com/{{developerTwitter}}" target="_blank"><em>{{ developer }}</em></a> {% else %}<em>{{ developer }}</em>{% endif %} on <a href="{{ Codepen }}">Codepen</a></p>
-    </div>
-    <button id="toggle">Toggle Animation</button>
-</section>
+
+
 
 <main class="post">
-    {{content | safe}}
-</main>
+    <h2>{{postTitle}}</h2>
 
 <section class="details">
-    <div>
-    <p>{{ FontName }} by {{ Creator }} is {{ Licensing }},
-        <a href="{{DownloadSource}}" target="_blank">{% if (Licensing === 'Open source') %}download{% else %}purchase{% endif %} from {{ Download }}</a>
-    </p>
-    <p>View the code by {% if (developerTwitter) %}<a href="https://twitter.com/{{developerTwitter}}" target="_blank"><em>{{ developer }}</em></a> {% else %}<em>{{ developer }}</em>{% endif %} on <a href="{{ Codepen }}">Codepen</a></p>
-    </div>
+<p><a href="{{DownloadSource}}" target="_blank">{{ FontName }}</a> by {{ Creator }} is {{ Licensing }}. <br />
+Code by {% if (developerTwitter) %}<a href="https://twitter.com/{{developerTwitter}}" target="_blank"><em>{{ developer }}</em></a> {% else %}<em>{{ developer }}</em>{% endif %} available on <a href="{{ Codepen }}">Codepen</a></p>
 </section>
+{{content | safe}}
+
+</main>
+

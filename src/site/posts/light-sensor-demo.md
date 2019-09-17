@@ -9,6 +9,7 @@ Licensing: Open source
 Download: velvetyne.fr
 DownloadSource: https://velvetyne.fr
 demoText: Light it up
+demoType: standard-animation
 css: css/light.css
 Codepen: https://codepen.io/mandymichael/pen/Mdoxpg
 developer: Mandy Michael
@@ -19,11 +20,11 @@ featureColorReverse: 8a8cca
 demoId: light-sensor
 date: 2019-06-11
 description: An example of how a variable font can react based on input from web browser apis and sensors like the Ambient light sensor.
+postTitle: Making the Light Sensor
+
 ---
 
 {% block content %}
-## Making the Light Sensor
-
 The purpose of this example is to demonstrate how Variable Fonts can _react_ and change based on input from web browser apis and sensors like the Ambient light sensor.
 
 **Please note as of 11th June 2019 this demo has very limited support, please refer to [Can I Use](https://caniuse.com/#search=ambient%20light%20sensor) for up to date support information.**

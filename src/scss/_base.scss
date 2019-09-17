@@ -77,16 +77,23 @@ nav {
     position: absolute;
     top: 0;
     flex: none;
+
+    a:hover,
+    a:focus {
+        color: $accent-color;
+        background: none;
+    }
 }
 
 a {
-    color: $text-color;
+    color: black;
     text-decoration: underline;
 }
 
-a:hover,
-a:focus {
-    color: $accent-color;
+
+a:hover, a:focus {
+    color: white;
+    background: black;
 }
 
 h1, h2, h3 {
@@ -144,15 +151,19 @@ h1 {
 }
 
 h2 {
-    font-size: calcRem($fontScale-5);
+    font-size: calcRem($fontScale-7);
     margin: calcRem($spacing-1) 0;
+    font-weight: 300;
+
 }
 
 h3 {
     text-transform: uppercase;
-    margin-top: calcRem($spacing-6);
-    border-bottom: 2px solid black;
+    margin-top: calcRem($spacing-7);
+    font-size: calcRem($fontScale-4);
     padding-bottom: 2px;
+    font-weight: 200;
+
 }
 
 .listing {

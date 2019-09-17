@@ -6,9 +6,10 @@ Publisher: Font Bureau
 Characters: Latin (limited)
 Release: 2017-02-07
 Licensing: Open source
-Download: https://github.com/TypeNetwork/Decovar
-DownloadSource: github
+Download: github
+DownloadSource: https://github.com/TypeNetwork/Decovar
 demoText: grow
+demoType: standard
 css: css/grow.css
 Codepen: https://codepen.io/mandymichael/pen/YYaWop
 developer: Mandy Michael
@@ -18,12 +19,11 @@ featureColorReverse: 234109
 featureColorAccent: a8b849
 date: 2019-06-10
 description: Creating a Growing text effect using CSS, HTML and Variable fonts!
+postTitle: Making the Grow Demo
 ---
 
 
 {% block content %}
-## Making the Grow Demo
-
 This was one of the first demos I created - my goal was to create a text effect that made it look like the text was "growing" without the need for SVG or canvas.
 
 Like all variable font effects this demo is only possible because {{ FontName }} contains the axis I need in order to create the "leafy" look.
