@@ -58,7 +58,7 @@ h1 {
 ```
 Importantly I have set up a CSS Custom Property called `--axis` with a default value of `20` (which is the lowest value of the weight axis of {{FontName}}). This will become important later as it will allow us to update the value of our axis using JavaScript. As we are using the `wght` axis for this effect we can make use of the `font-weight` property instead of `font-variation-settings` (You should always use the mapped CSS properties when they are available).
 
-### Accessing the Sensor data with JavaScript
+### Accessing the Sensor data
 
 In order to access the Ambient Light Sensor we will make use of a little bit of JavaScript and a JavaScript function that I created called "Fluid Axis Variation Events" which you can find on [Github](https://github.com/mandymichael/fluid-axis-variation-events) or in the JS panel on the [Codepen]({{Codepen}}) example.
 

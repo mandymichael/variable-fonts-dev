@@ -17,7 +17,7 @@ developerTwitter: Mandy_Kerr
 featureColor: 1a2c02
 featureColorReverse: c3ee2d
 featureColorAccent: 89e220
-date: 2019-09-17
+date: 2019-09-10
 description: Creating an oozing slimey text effect using Chee!
 postTitle: Making slime text effects
 

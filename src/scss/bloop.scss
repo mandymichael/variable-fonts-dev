@@ -1,3 +1,5 @@
+
 body {
-    background: linear-gradient(to top, #1a2980, #26d0ce);
+	background: #26d0ce radial-gradient(ellipse at center, #26d0ce 20%,#1a2980 80%);
+    height: 100%;
 }

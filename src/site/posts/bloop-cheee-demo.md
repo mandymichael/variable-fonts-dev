@@ -9,14 +9,14 @@ Licensing: Paid/Commercial
 Download: Future Fonts
 DownloadSource: https://www.futurefonts.xyz/ohno/cheee
 demoType: video
-css: css/ooze.css
+css: css/bloop.css
 videoSource: https://www.youtube-nocookie.com/embed/7daahuvsQz4?rel=0&amp;controls=0&amp;showinfo=0"
 Codepen: https://codepen.io/mandymichael/pen/LJeZBO
 developer: Mandy Michael
 developerTwitter: Mandy_Kerr
-featureColor: 26d0ce
-featureColorReverse: c3ee2d
-featureColorAccent: 1a2980
+featureColor: 3d709c
+featureColorReverse: 1c2d7e
+featureColorAccent: 26d0ce
 date: 2019-09-17
 description: Creating an on scroll variable font effect using Chee by OH no Type Co.
 postTitle: On scroll variable font effect with Chee
@@ -47,7 +47,7 @@ h1 {
 ```
 Over in our JavaScript we'll set up the code needed to hook into the scroll event.
 
-### Accessing the Scroll position with JavaScript
+### Accessing the Scroll position
 
 
 Like our [Ambient Light Sensor](/light-sensor-demo) example we need to set up a few bits of information about the axis we want to affect and the event we want to use.
