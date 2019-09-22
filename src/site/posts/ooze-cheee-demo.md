@@ -25,9 +25,11 @@ postTitle: Making slime text effects
 
 
 {% block content %}
-Chee is one of my favourite variable fonts to create fun demos with because it has a few really interesting axes. For this effect, we make use of the "Temp" axis which makes the font characters look like they are dripping. This axis could be used for a whole bunch of different styles, slime, blood, water drops, icecream! It's a pretty versatile axis if you are willing to get creative with it.
+Chee is one of my favourite variable fonts to create fun demos with because it has a few really interesting axes. For this effect, I've used the `temp` axis which makes the font characters look like they are dripping.
 
-Like our other examples we set up base html and css.
+This axis could be used for a whole bunch of different styles, slime, blood, icecream! It's a pretty versatile axis if you think a little creatively. So with that in mind, let's get started.
+
+First I'll setup the foundations i.e. the html and css. In this case is a simple `h1` with some text in it, and the `font-family` set to Chee, and `font-variation-settings` property using the `temp` axis and an initial value of `0`, which happens to be it's minimum value.
 
 ``` html
 <h1>Ooze</h1>
@@ -36,36 +38,36 @@ Like our other examples we set up base html and css.
 ``` css
 h1 {
     font-family: "Chee";
-	font-variation-settings: "temp" 1000;
+	font-variation-settings: "temp" 0;
 }
 ```
 
 ### The Animation
 
-For this example we'll use CSS keyframes to create the animation and transition it from no dripping to full drip mode! To keep it simple i've used a linear easing and run the animation infinitley.
+To create the animation I used CSS keyframes to animate the "drip" effect! To keep it simple I've used a linear easing and run the animation infinitley.
 
-I have also included an `animation-direction` of alternate so the animation will run back and forth between oozing and...not oozing.
+I have also included an `animation-direction` of `alternate` so the animation will run back and forth between oozing and...not oozing.
 
 ``` css
 @keyframes ooze {
 	0% {
 		font-variation-settings: "temp" 0;
 	}
-	50% {
+	100% {
 		font-variation-settings: "temp" 1000;
 	}
 }
 
 h1 {
-    animation: ooze 10s linear infinite alternate;
     font-family: "Chee";
-	font-variation-settings: "temp" 1000;
+    font-variation-settings: "temp" 1000;
+    animation: ooze 5s linear infinite alternate;
 }
 ```
 
 Having an animation just infinitely loop is not super exciting so I like to think about how we can trigger these effects with an interaction, sensor or other event on the page. For example, my personal favourite is making it ooze only in "dark mode" (because it's dark mode, and it's oozy slime..get it, haha).
 
-The way we accomplish this is with a CSS transition and a media query. So rather than creating an animation keyframe we can set our "light mode" as a `temp` of 0, and inside our media query we set `prefers-color-scheme: dark` and change our `font-variation-settings` `temp` value to 1000.
+The way we accomplish this is with a CSS transition and a media query. So rather than creating an animation keyframe we can set our "light mode" as a `temp` of `0`, and inside our media query we set `prefers-color-scheme: dark` and change our `font-variation-settings` `temp` axis value to 1000.
 
 ```css
 h1 {
@@ -89,13 +91,12 @@ In order to make it look slimey, there are really only two main css properties t
 
 ```css
 opacity: 0.8;
-	color: transparent;
-	text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 25px rgba(#3f6c12, 1);
+text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 25px rgba(#3f6c12, 1);
 ```
 
-The opacity is to give the text that jelly look, where it's semi-translucent. It's really the text shadows that do all the work here. I'm a big fan of text shadows, you can create all sorts of great effects with them and in this case the text shadow gives the slime a bit of a shine and glow around the edges.
+The opacity makes the text look semi-translucent, kinda like jelly, or slime, but it's really the text shadows that do all the work here - they give the slime a bit of a shine and glow around the edges.
 
-The second part is creating the layers, I'm accomplishing this using `pseudo-elements` but you can also do this with some `spans`. The layers are used to give the effect some depth, the first is just to add some extra colour, and the second is to make use of another text shadow. What these accomplish is to give the text some "consistency".
+The second part is creating the layers, I'm accomplishing this using `pseudo-elements` but you can also do this with some `spans` and `aria-hidden`. The layers are used to give the effect some depth, the first is just to add some extra colour, and the second is to make use of another text shadow.
 
 ```css
 	h1::before {

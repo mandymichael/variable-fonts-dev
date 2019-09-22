@@ -76,6 +76,11 @@ if (document.getElementById("light-sensor")) {
     getLightSensor();
 }
 
+
+// Speech recognition fire demo featuring Marshmallow
+
+
+
 // Fluid Axis Variation
 function fluidAxisVariation(minimumAxisValue, maximumAxisValue, minimumEventValue, maximumEventValue, eventValue, axisCustomPropertyName, element) {
 
