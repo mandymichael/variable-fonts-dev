@@ -17,8 +17,8 @@ Codepen: https://codepen.io/mandymichael/pen/OJLrgdv
 developer: Mandy Michael
 developerTwitter: Mandy_Kerr
 featureColor: b94b9e
-featureColorAccent: d1e5d6
-featureColorReverse: 5969a1
+featureColorAccent: ff00e7
+featureColorReverse: fec7ff
 date: 2019-09-20
 description: Demoing the Google V2 API for accessing variable fonts
 postTitle: Using the Google API to access variable fonts.
