@@ -1,0 +1,60 @@
+body {
+    background: rgb(172,108,171);
+    background: linear-gradient(180deg, rgba(172,108,171,1) 10%, rgba(214,202,208,1) 32%, rgba(224,224,216,1) 42%, rgba(218,211,211,1) 61%, rgba(101,128,156,1) 100%);
+}
+
+
+// Google API Fira Code...
+.demo {
+	font-family: 'Fira Code', mono-space;
+	font-weight: 300;
+	font-size: 6rem;
+	text-shadow: 2px -1px 20px rgba(0,0,0,0.3);
+	text-transform: uppercase;
+	margin: 0;
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+
+.demo.splitting .char {
+    display: inline-block;
+	animation-name: bounceLetters;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(.64,.57,.67,1.53);
+	animation-delay: calc(0.25s + var(--char-index) * 0.1s);
+}
+
+.no-animation .demo.splitting .char {
+    animation: none;
+}
+
+@keyframes bounceLetters {
+	0% {
+		font-weight: 300;
+		transform: scale(1, 1) translateY(0);
+	}
+	10% {
+		transform: scale(1.1, 0.9) translateY(0);
+	}
+	30% {
+		transform: scale(0.9, 1.1) translateY(-20px);
+	}
+	50% {
+		font-weight: 500;
+		transform: scale(1.05, 0.95) translateY(0);
+	}
+	57% {
+		transform: scale(1, 1) translateY(-7px);
+	}
+	64% {
+		transform: scale(1, 1) translateY(0);
+	}
+	100% {
+		font-weight: 300;
+		transform: scale(1, 1) translateY(0);
+	}
+}
+
+

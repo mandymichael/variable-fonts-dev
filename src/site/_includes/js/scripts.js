@@ -77,6 +77,13 @@ if (document.getElementById("light-sensor")) {
 }
 
 
+// Bouncy Fira Code
+
+if (document.getElementById("fira-google-api")) {
+    Splitting();
+}
+
+
 // Speech recognition fire demo featuring Marshmallow
 
 

@@ -51,7 +51,10 @@
         {{ content | safe }}
 
         {% include "footer.njk" %}
+
+        {% if (demoId) === 'fira-google-api' %}<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>{% endif %}
         <script>{% include "js/scripts.js" %}</script>
+
     </div>
   </body>
 </html>
