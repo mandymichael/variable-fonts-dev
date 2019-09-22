@@ -28,6 +28,9 @@
     {% endif %}
     <meta property="og:description" content="{{description}}">
     <meta property="article:author" content="{{developer}}">
+
+    {# TODO: Make this only load on the correct post #}
+    <link href="https://fonts.googleapis.com/css2?family=Fira%20Code:wght@300..700&display=swap" rel="stylesheet">
   </head>
 
   {% set lastItem = collections.post | length %}

@@ -74,8 +74,13 @@ header {
 
 nav {
     position: absolute;
-    top: 0;
+    top: 42px;
     flex: none;
+
+    @media screen and (min-width: 500px) {
+        top: 0;
+
+    }
 
     a:hover,
     a:focus {
