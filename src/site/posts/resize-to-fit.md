@@ -33,9 +33,13 @@ There are a number of ways you can have text resize to fit its parent container,
 
 With variable fonts that contain a width axis, we can adjust the `font-stretch` property with CSS to condense the font. When we combine this with `font-size` as well we can create more flexible response text on the web. For our example, we are using [Barlow]({{FontName}}) which has a width axis with a range of 300% to 500%. 
 
-<iframe width="1280" height="720" src="https://www.youtube.com/watch?v=C7zHUz54Mg8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-wrapper">
+<div class="video">
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/C7zHUz54Mg8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
 
-## The Code
+### The Code
 
 You can either check out the [Codepen]({{Codepen}}) now, or you can read on to get a breakdown.
 
@@ -73,7 +77,7 @@ In order to update in real time, for my Codepen example I used the `resizeObserv
 `new ResizeObserver(calcWidth).observe(box);`
 
 
-## Bonus
+### Bonus
 
 While I was working on this I wanted a quick way to resize a div for the demo, I procrastinated a lot on it because I thought i'd have to write a bunch of code. Turns out, Chris Coyier had a great CSS only suggestion! `resize`. This property accepts a number of options and sets whether an element is resizable, and in which directions you can resize it! It only works on elements that don't have an overflow of hidden though. Check it out on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/resize). (Or have a play with the bottom right corner on the header box).
 
