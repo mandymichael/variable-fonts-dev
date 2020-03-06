@@ -10,7 +10,7 @@ Download: Google Fonts
 DownloadSource: https://fonts.google.com/specimen/Fira+Code?selection.family=Fira+Code
 demoText: Fira Code Variable
 demoAttribute: data-splitting
-demoType: standard
+demoType: standard-animation
 demoId: fira-google-api
 css: css/fira-google-api.css
 Codepen: https://codepen.io/mandymichael/pen/OJLrgdv

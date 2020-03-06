@@ -9,7 +9,7 @@ Licensing: Open source
 Download: github
 DownloadSource: https://github.com/TypeNetwork/Decovar
 demoText: grow
-demoType: standard
+demoType: standard-animation
 css: css/grow.css
 Codepen: https://codepen.io/mandymichael/pen/YYaWop
 developer: Mandy Michael

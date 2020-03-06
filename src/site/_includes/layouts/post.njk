@@ -5,14 +5,14 @@ templateEngineOverride: njk, md
 ---
 
 {% if css %}<style>{% include css %}</style>{% endif %}
-{% if demoType === 'standard' %}<button id="toggle">Toggle Animation</button>{% endif %}
+{% if demoType === 'standard-animation' %}<button id="toggle">Toggle Animation</button>{% endif %}
 
 <section>
 {% if (demoType === 'standard') or (demoType === 'standard-animation') %}
 {%if demoAttribute %}
 <p contenteditable data-text="{{demoText}}" {{demoAttribute}} class="demo" id="{{demoId}}">{{demoText}}</p>
 {%else%}
-<p contenteditable data-text="{{demoText}}" class="demo" id="{{demoId}}">{{demoText}}</p>
+<div id="box"><p data-text="{{demoText}}" class="{{demoId}}" id="{{demoId}}">{{demoText}}</p></div>
 {%endif%}
 {% elseif (demoType === 'video') %}
 <div class="video-wrapper">

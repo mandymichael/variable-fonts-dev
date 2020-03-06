@@ -1,0 +1,39 @@
+body {
+    background: #171515;
+}
+
+@font-face {	
+	font-family:'Barlow GX';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/BarlowGX.ttf');
+	font-style: normal;
+	font-weight: 22 188;
+	font-stretch: 300% 500%;
+}
+
+.resize-to-fit {
+	--fontStretch:  500%;
+	--fontSize: 78px;
+	
+	font-family:'Barlow GX';
+	font-size: var(--fontSize);
+	font-weight: 50;
+	margin: 0;
+	text-transform: uppercase;
+	line-height: 0.9;
+	font-stretch: var(--fontStretch);
+	display: inline-block;
+}
+
+#box {
+	--size: 237px;
+    margin: 0 auto;
+	display: flex;
+	align-items: center;
+	border: 4px solid white;
+	width: var(--size);
+    height: var(--size);
+
+    resize: horizontal;
+    overflow: auto;
+}
+

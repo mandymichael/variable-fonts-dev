@@ -14,7 +14,7 @@ videoSource: https://www.youtube-nocookie.com/embed/7daahuvsQz4?rel=0&amp;contro
 Codepen: https://codepen.io/mandymichael/pen/LJeZBO
 developer: Mandy Michael
 developerTwitter: Mandy_Kerr
-featureColor: 3d709c
+featureColor: 2b739e
 featureColorReverse: defff5
 featureColorAccent: 26d0ce
 date: 2019-09-17
@@ -22,7 +22,6 @@ description: Creating an on scroll variable font effect using Chee by OH no Type
 postTitle: On scroll variable font effect with Chee
 
 ---
-
 
 {% block content %}
 I previously used Chee in the <a href="/ooze-cheee-demo">Ooze Demo</a> using the `temp` axis. In this example we'll be using the `yest` and `gvty` axes, but rather than animating with CSS, we'll use a CSS Custom Property and connect it up with the browser scroll event.

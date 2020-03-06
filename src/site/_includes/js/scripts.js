@@ -84,29 +84,63 @@ if (document.getElementById("fira-google-api")) {
 }
 
 
-// Speech recognition fire demo featuring Marshmallow
+// Resize to fit
+if(document.getElementById("resize-to-fit")) {
 
+    const box = document.getElementById("box");
+    const text = document.getElementById("resize-to-fit");
 
+    function resizeBox() {
+        calcTextWidth();
+        calcTextSize();
+    }
+    resizeBox();
 
-// Fluid Axis Variation
-function fluidAxisVariation(minimumAxisValue, maximumAxisValue, minimumEventValue, maximumEventValue, eventValue, axisCustomPropertyName, element) {
+    new ResizeObserver(resizeBox).observe(box);
 
-	const minAxisValue = minimumAxisValue;
-	const maxAxisValue = maximumAxisValue;
-    const minEventValue = minimumEventValue;
-	const maxEventValue = maximumEventValue;
-	const currentEventValue = eventValue;
+    function calcTextWidth() {
+        const parentContainerWidth = text.parentNode.clientWidth;
+        const currentTextWidth = text.scrollWidth;
+        const currentFontStretch = parseInt(window.getComputedStyle(text).fontStretch);
+        const newValue = Math.min(Math.max(300, (parentContainerWidth / currentTextWidth) * currentFontStretch), 500)
 
-	const eventPercent = (currentEventValue - minEventValue) / (maxEventValue - minEventValue);
-	const fontAxisScale = eventPercent * (minAxisValue - maxAxisValue) + maxAxisValue;
+        text.style.setProperty('--fontStretch', newValue + '%');
+    }
 
-	const newAxisValue = currentEventValue > maxEventValue
-	   ? minAxisValue
-       : currentEventValue < minEventValue
-   			? maxAxisValue
-   			: fontAxisScale;
+    function calcTextSize() {
+        const parentContainerWidth = text.parentNode.clientWidth;
+        const currentTextWidth = text.scrollWidth;
+        const currentFontSize = parseInt(window.getComputedStyle(text).fontSize);
+        const newValue = Math.min(Math.max(16, (parentContainerWidth / currentTextWidth) * currentFontSize), 500)
 
-
-    element.style.setProperty(axisCustomPropertyName, newAxisValue);
+        text.style.setProperty('--fontSize', newValue +'px');
+    }
 
 }
+
+
+
+
+
+    // Fluid Axis Variation
+    function fluidAxisVariation(minimumAxisValue, maximumAxisValue, minimumEventValue, maximumEventValue, eventValue, axisCustomPropertyName, element) {
+
+        const minAxisValue = minimumAxisValue;
+        const maxAxisValue = maximumAxisValue;
+        const minEventValue = minimumEventValue;
+        const maxEventValue = maximumEventValue;
+        const currentEventValue = eventValue;
+
+        const eventPercent = (currentEventValue - minEventValue) / (maxEventValue - minEventValue);
+        const fontAxisScale = eventPercent * (minAxisValue - maxAxisValue) + maxAxisValue;
+
+        const newAxisValue = currentEventValue > maxEventValue
+        ? minAxisValue
+        : currentEventValue < minEventValue
+                ? maxAxisValue
+                : fontAxisScale;
+
+
+        element.style.setProperty(axisCustomPropertyName, newAxisValue);
+
+    }
