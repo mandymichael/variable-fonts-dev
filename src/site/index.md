@@ -6,6 +6,7 @@ description: Variable fonts effects, examples and experiments for developers!
 developer: Mandy Michael
 ---
 
+<!--
 <div class="listing">
 {% for page in collections.post | reverse %}
 
@@ -29,4 +30,4 @@ developer: Mandy Michael
 
 
 {% endfor %}
-</div>
+</div> -->

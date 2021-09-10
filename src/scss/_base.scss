@@ -35,7 +35,7 @@ body {
     --bg-color: white;
     --bg-color-end: white;
     --featureColorAccent: white;
-    --featureColorReverse: black;
+    --featureColorReverse: #99004e;
 
     min-height: 100vh;
     font-family: $fontBody;
@@ -58,6 +58,8 @@ header {
 .home header {
     min-height: 80vh;
     padding-top: calcRem($spacing-3);
+    flex-wrap: wrap;
+
 }
 
 // TODO: Create mixin to share between layouts
@@ -124,7 +126,7 @@ h1 {
     --axis: 17;
     --axis2: 30;
 
-    font-size: calcRem(50px);
+    font-size: calcRem(70px);
     font-weight: 100;
     margin-top: calcRem($spacing-7);
     margin-bottom: calcRem($spacing-2);
@@ -142,7 +144,7 @@ h1 {
     }
 
     @media screen and (min-width: 768px) {
-        font-size: calcRem(170px);
+        font-size: calcRem(100px);
     }
 
     &::before {
@@ -152,6 +154,10 @@ h1 {
         font-variation-settings: "wght" var(--axis2);
         left: 0;
     }
+}
+
+p.coming-soon {
+padding: calcRem($spacing-4)
 }
 
 h2 {

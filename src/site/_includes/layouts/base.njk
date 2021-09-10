@@ -5,62 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>{% include "css/main.css" %}</style>
     <title>{{ title }}</title>
-
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
     <link rel="manifest" href="/images/icons/site.webmanifest">
     <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#1c1c40">
     <link rel="shortcut icon" href="/images/icons/favicon.ico">
-    <link rel="alternate" type="application/rss+xml" title="Variable Fonts &raquo; Feed" href="https://variablefonts.dev/feed.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Variable Fonts &raquo; Feed"
+      href="https://variablefonts.dev/feed.xml"/>
     <meta name="msapplication-TileColor" content="#1c1c40">
     <meta name="msapplication-config" content="/images/icons/browserconfig.xml">
     <meta name="theme-color" content="#1c1c40">
-
     <meta property="og:type" content="article">
-    <meta property="og:title" content="{{title}}">
-    <meta property="og:url" content="https://variablefonts.dev/posts/{{ title | replace(' ', '-') | lower}}">
-
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:url" content="https://variablefonts.dev/posts/{{ title | replace(' ', '-') | lower }}">
     {% if (bodyClass) === 'home' %}
-        <meta property="og:image" content="https://variablefonts.dev/images/default-social.png">
+      <meta property="og:image" content="https://variablefonts.dev/images/default-social.png">
     {% else %}
-        <meta property="og:image" content="https://variablefonts.dev/images/{{ title | replace(' ', '-') | lower}}.png">
+      <meta property="og:image" content="https://variablefonts.dev/images/{{ title | replace(' ', '-') | lower }}.png">
     {% endif %}
-    <meta property="og:description" content="{{description}}">
-    <meta property="article:author" content="{{developer}}">
-
-    {# TODO: Make this only load on the correct post #}
+    <meta property="og:description" content="{{ description }}">
+    <meta
+    property="article:author" content="{{ developer }}"> {# TODO: Make this only load on the correct post #}
     <link href="https://fonts.googleapis.com/css2?family=Fira%20Code:wght@300..700&display=swap" rel="stylesheet">
   </head>
-
   {% set lastItem = collections.post | length %}
-
   <body class="{{ bodyClass }}" style="
-    --bg-color: #{{collections.post[lastItem - 1].data.featureColor}};
-    --bg-color-end: #{{collections.post[0].data.featureColor}};
-    --featureColorAccent: #{{collections.post[lastItem - 1].data.featureColorAccent}}; --featureColorReverse: #{{collections.post[lastItem - 1].data.featureColorReverse}}">
+                                        --bg-color: hotpink;
+                                        --bg-color-end: #d8207e;
+                                        --featureColorAccent: #ffcce6">
     <div>
-        <header>
-            <nav>
-                <ul class="nav">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/getting-started">Getting Started</a></li>
-                    <li><a href="/about">About</a></li>
-                </ul>
-            </nav>
-            <h1 class="site-title" data-heading="{{title}}">{{ title }}</h1>
-        </header>
+      <header>
+        <nav>
+          <ul class="nav">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/getting-started">Getting Started</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="site-title" data-heading="{{ title }}">{{ title }}</h1>
+          {% if (pageClass) === 'home' %} <p class="coming-soon">The site will be temporarily unavailable while we make some updates!</p>{% endif %}
 
-        {{ content | safe }}
-
-        {% include "footer.njk" %}
-
-        {% if (demoId) === 'fira-google-api' %}<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>{% endif %}
-        <script>{% include "js/scripts.js" %}</script>
-
+      </header>
+      {{ content | safe }}
+      {% include "footer.njk" %}
+      {% if (demoId) === 'fira-google-api' %}
+        <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+      {% endif %}
+      <script>{% include "js/scripts.js" %}</script>
     </div>
   </body>
 </html>
-
-
-
