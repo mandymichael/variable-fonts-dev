@@ -1,0 +1,11 @@
+{
+  "showThemeCredit": true,
+  "name": "Variable fonts",
+  "shortDesc": "Variable fonts effects, examples and experiments for developers, designers, or anyone!",
+  "url": "https://variablefonts.dev",
+  "authorHandle": "@mandy_kerr",
+  "authorName": "Mandy Michael",
+  "enableThirdPartyComments": false,
+  "maxPostsPerPage": 5,
+  "faviconPath": "/images/favicon.png"
+}

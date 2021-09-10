@@ -5,3 +5,17 @@ src/site/_includes/css
 .env
 yarn-error.log
 *.DS_Store
+*.log
+npm-debug.*
+*.scssc
+*.log
+*.swp
+.sass-cache
+
+# Specifics
+
+# Hide design tokens
+new-site/src/scss/_tokens.scss
+
+# Hide compiled CSS
+new-site/src/_includes/assets/*
