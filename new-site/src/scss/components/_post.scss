@@ -16,6 +16,10 @@
       /*display: flex;*/
 
       @include apply-utility('leading', 'tight');
+
+      span {
+        font-size: 0.6em;
+      }
     }
 
     a:not([class]) {
@@ -60,6 +64,7 @@
         opacity: 0.85;
         padding: get-size(500) 0;
       }
+
     }
 
     ol:not([class]),

@@ -7,4 +7,4 @@ metaDesc: 'Variable fonts effects, examples and experiments for developers!'
 socialImage: ''
 ---
 
-Variable fonts for developers is a collection of experiements, effects, examples and stuff I have learned as a developer about variable fonts!
+<span>Variable fonts for developers is a collection of experiments, effects, examples and stuff I have learned as a developer about variable fonts!</span>

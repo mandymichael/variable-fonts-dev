@@ -7,8 +7,14 @@
   {% if date %}
     <time datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
   {% endif %}
-  <span>— {{ helpers.getReadingTime(content) }} minute read</span>
+  <p class="[ time-to-read gap-top-300 ]">{{ helpers.getReadingTime(content) }} minute read</p>
 </p>
+
+{% if creditFont %} 
+<p>Featured font: <a href="{{fontSource}}" target="_blank" norefferer noopener>{{fontName}}</a> {% if creator %}{{Creator}}{% endif %}, <a href="{{publisherWebsite}}" target="_blank" norefferer noopener>{{publisher}}</a>  </p>
+
+{% endif %}
+
 {% endset %}
 
 {% block content %}

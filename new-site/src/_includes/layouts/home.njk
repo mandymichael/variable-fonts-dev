@@ -1,4 +1,5 @@
 {% extends 'layouts/base.njk' %}
+{% import "partials/components/post-list.njk" as postList %}
 
 {# Intro content #}
 {% set introHeading = title %}
@@ -16,10 +17,33 @@
   {% set paginationNextUrl = '/archive' %}
 {% endif %}
 
+{# Tagged as lists #}
+{% set listsPostsHeading = 'Font lists' %}
+{% set listsPostsItems = collections['list'] %}
+
+{# Archive link #}
+{% if listsPostsItems.length < collections.posts.length %} 
+  {% set listsPostsPaginationNextText = 'More lists' %}
+  {% set listsPostsPaginationNextUrl = '/tags/list' %}
+{% endif %}
+
 {% block content %}
   <main id="main-content" tabindex="-1">
     {% include "partials/components/intro.njk" %}
-    {% include "partials/components/post-list.njk" %}
-    {% include "partials/components/pagination.njk" %}
+      <div class="[ inner-wrapper ] [ sf-flow ]">
+        <div class="[ md:box-flex align-start ]">
+
+          {{ postList.postListMacro(
+              postListHeading, 
+              postListItems, 
+              paginationNextUrl, 
+              paginationNextText,
+              global.now) 
+            }}
+
+          {{ postList.postListMacro(listsPostsHeading, listsPostsItems, listsPostsPaginationNextUrl, listsPostsPaginationNextText, global.now) }}
+
+        </div>
+      </div>
   </main>
 {% endblock %}

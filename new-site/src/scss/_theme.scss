@@ -22,7 +22,7 @@
 }
 
 @include dark-mode() {
-  --color-bg: #{get-color('dark')};
+  --color-bg: var(--color-blue);
   --color-bg-glare: #{get-color('slate')};
   --color-text: #{get-color('light')};
   --color-selection-text: #{get-color('dark')};

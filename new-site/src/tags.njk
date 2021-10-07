@@ -16,6 +16,7 @@ permalink: /tags/{{ tag }}/
 ---
 
 {% extends 'layouts/base.njk' %}
+{% import "partials/components/post-list.njk" as postList %}
 
 {# Intro content #}
 {% set introHeading %}Posts filed under “{{ tag }}”{% endset %}
@@ -23,13 +24,24 @@ permalink: /tags/{{ tag }}/
 
 {# Post list content #}
 {% set postListHeadingLevel = '2' %}
-{% set postListHeading = 'Posts' %}
+{% if tag === 'list' %}
+  {% set postListHeading = 'What are you looking for?' %}
+{% else %}
+  {% set postListHeading = 'Posts' %} 
+{% endif %}
 {% set postListItems = collections[tag] %}
 
 {% block content %}
   <main id="main-content" tabindex="-1">
     {% include "partials/components/intro.njk" %}
-    {% include "partials/components/post-list.njk" %}
-    {% include "partials/components/pagination.njk" %}
+    {{ postList.postListMacro
+      (
+        postListHeading, 
+        postListItems, 
+        '', 
+        'Next',
+        global.now
+      ) 
+    }}
   </main>
 {% endblock %}

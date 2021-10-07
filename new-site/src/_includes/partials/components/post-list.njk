@@ -1,21 +1,28 @@
-{% if postListItems.length %}
-  <section class="[ post-list ] [ pad-top-700 gap-bottom-900 ]">
-    <div class="[ inner-wrapper ] [ sf-flow ]">
-      <h2 class="[ post-list__heading ] [ text-700 md:text-800 ]">{{ postListHeading }}</h2>
-      <ol class="[ post-list__items ] [ sf-flow ] [ pad-top-300 ]" reversed>
-        {% for item in postListItems %}
-          {% if item.date.getTime() <= global.now %}
-            <li class="post-list__item">
-              <h3 class="font-base leading-tight text-600 weight-mid">
-                <a href="{{ item.url }}" class="post-list__link" rel="bookmark">{{ item.data.title }}</a>
-              </h3>
-              <p class="text-500 gap-top-300 weight-mid">
-                <time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
-              </p>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ol>
-    </div>
-  </section>
-{% endif %}
+{% macro postListMacro(postListHeading, postListItems, paginationNextUrl, paginationNextText, timeNow) %}
+  {% if postListItems.length %}
+    <section class="[ post-list ] [ pad-top-700 gap-bottom-900 ]">
+      <div class="[ inner-wrapper ] [ sf-flow ]">
+        <h2 class="[ post-list__heading ] [ text-700 md:text-800 ]">{{ postListHeading }}</h2>
+        <ol class="[ post-list__items ] [ sf-flow ] [ pad-top-300 ]" reversed>
+          {% for item in postListItems %}
+            {% if item.date.getTime() <= timeNow %}
+
+              <li class="post-list__item">
+                <h3 class="font-base leading-tight text-500 weight-regular">
+
+                  <a href="{{ item.url }}" class="post-list__link" rel="bookmark">{{ item.data.title }}</a>
+                </h3>
+                <p class="text-300 gap-top-100 weight-mid">
+                  <time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
+                </p>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+
+      {% include "partials/components/pagination.njk" %}
+
+      </div>
+    </section>
+  {% endif %}
+{% endmacro %}

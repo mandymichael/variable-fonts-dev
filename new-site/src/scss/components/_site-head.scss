@@ -3,5 +3,6 @@
     font-weight: 700;
     text-decoration: none;
     color: var(--color-text);
+    @include apply-utility('font', 'serif');
   }
 }
