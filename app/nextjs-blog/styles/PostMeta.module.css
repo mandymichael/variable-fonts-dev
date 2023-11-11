@@ -1,0 +1,32 @@
+.divider {
+    margin: 2.500rem 0 0 0;
+    padding: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #17171C;
+    border: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #17171C;
+}
+
+@media screen and (min-width: 767px) {
+    .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .postMetaList {
+        display: none;
+    }
+}

@@ -1,0 +1,9 @@
+.svg {
+    width: 24px;
+    height: 24px;
+    fill: #17171C;
+}
+
+.svg:hover {
+    fill: #EB5088;
+}
