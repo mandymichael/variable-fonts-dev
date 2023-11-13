@@ -14,7 +14,7 @@ export default function PostList({posts, title, columns, tagType, postType}) {
                 return(
                 <li key={id} className={PostListStyles.articleListItem}>
                     <Link href={`/posts/${id}`}><Image className={PostListStyles.image} width="440" height="442" src={card ? card.cardImage : '/images/post-assets/cards/default.jpg'} alt={card ? card.cardAlt : 'default post image'} /></Link>
-                    <div>
+                    <div className={PostListStyles.content}>
 
                         {tagType === 'parent' &&
                             <p className={PostListStyles.cardMeta}>
@@ -26,10 +26,11 @@ export default function PostList({posts, title, columns, tagType, postType}) {
                         }
 
                         {tagType === 'all' && 
-                             <TagList tags={tags} small={true} filter={postType} />
+                            <TagList tags={tags} small={true} filter={postType} />
                         }   
 
                         <h3 className={PostListStyles.cardHeading}>
+                            <span className={`${PostListStyles.cardMeta} ${PostListStyles.cardMetaMobile}`}>{date && <Date dateString={date} />}</span>
                             <Link href={`/posts/${id}`} className={PostListStyles.cardLink}>{title}</Link>
                         </h3>
 

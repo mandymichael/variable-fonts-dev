@@ -2,10 +2,17 @@
   max-width: 1416px;
   width: 100%;
   margin: 0 auto;
+  padding: 0.5rem;
 }
 
-@media (max-width: 1420px) {
+@media (min-width: 48rem) {
   .pageContainer {
     padding: 1rem;
+  }
+}
+
+@media (min-width: 92.5em) {
+  .pageContainer {
+    padding: 0;
   }
 }
