@@ -18,7 +18,7 @@ featureFont: {
 }
 card: {
     featured: /images/post-assets/cards/resize-to-fit-featured.jpg,
-    card: /images/post-assets/cards/resize-to-fit.jpg,
+    cardImage: /images/post-assets/cards/resize-to-fit.jpg,
     cardAlt: Text resize to fit inside a rectangle with the words CSS is Awesome, representing the classic CSS overflow joke, but without the overflow,
     cardFeaturedSummary: The flexibility of variable fonts enable developers to create more responsive designs and components that would have previously required  sacrifices. With variable fonts that contain a width axis, we can adjust the font-stretch property with CSS to condense the font. When we combine this with font-size  we can create more flexible response text on the web.
 }
@@ -34,6 +34,9 @@ The flexibility of variable fonts enable developers to create more responsive de
 
 
 ### The Code
+
+<div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Resize text to fit" src="//codepen.io/mandymichael/embed/NWqaNJL/?height=300&theme-id=dark&default-tab=result" frameBorder="no" allowtransparency="true" allowFullscreen="true">
+</iframe></div>
 
 You can either check out the [Demo on Codepen]( https://codepen.io/mandymichael/pen/NWqaNJL) now, or you can read on to get a breakdown.
 

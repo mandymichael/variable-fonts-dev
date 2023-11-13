@@ -15,6 +15,10 @@ featureFont: {
     publisher: OH no Type Co,   
     video: https://www.youtube-nocookie.com/embed/7daahuvsQz4?rel=0&amp;controls=0&amp;showinfo=0,
 }
+card: {
+    cardImage: /images/post-assets/cards/bloop.jpg,
+    cardAlt: Chee font with full yest and gravity axis spelling bloop
+}
 demo: {
     url: https://codepen.io/mandymichael/pen/LJeZBO,
     authorUrl: http://mandy.dev,

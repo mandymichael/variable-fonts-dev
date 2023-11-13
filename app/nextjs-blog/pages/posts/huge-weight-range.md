@@ -19,9 +19,9 @@ demo: {
     author: Mandy Michael,
 }
 card: {
-    featured: /images/post-assets/cards/resize-to-fit-featured.jpg,
-    card: /images/post-assets/cards/resize-to-fit-featured.jpg,
-    cardAlt: Text resize to fit inside a rectangle with the words CSS is Awesome, representing the classic CSS overflow joke, but without the overflow,
+    featured: /images/post-assets/cards/weight-range-featured.jpg,
+    cardImage: /images/post-assets/cards/weight-range.jpg,
+    cardAlt: The a character in different font widths,
     cardFeaturedSummary: Variable font with a very large weight range can provide more flexibility in designs and experiments. Having a large weight range can give you the capabilities of representing text that is very bold as well as very thin without the need for multiple fonts and maintain the cohesion you get from using the same typeface.
 }
 ---
@@ -53,6 +53,7 @@ Jost has a large weight range from Hairline to Black, and to be honest I just re
 Jost is actively being developed, so it has new features and improvements released, including new character sets. So it's a great option if you need some variety and a font that is constantly improving.
 
 [Get Jost](https://fonts.google.com/specimen/Jost?vfonly=true) - Free, Google Fonts
+
 
 ## Antarctica VAR  <span class="author">By Ian Party</span>
 

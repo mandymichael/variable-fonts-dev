@@ -15,6 +15,10 @@ featureFont: {
     publisher: Nikita Prokopov, also available on Google Fonts,   
     image: '/images/post-assets/fira-code.png'
 }
+card: {
+    cardImage: /images/post-assets/cards/fira-code.jpg,
+    cardAlt: Fira Code at different sizes
+}
 demo: {
     url: https://codepen.io/mandymichael/pen/OJLrgdv,
     authorUrl: http://mandy.dev,

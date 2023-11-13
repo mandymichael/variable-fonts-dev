@@ -16,6 +16,10 @@ featureFont: {
     publisher: Font Bureau,   
     video: https://www.youtube-nocookie.com/embed/2rlTHzK4uKg?rel=0&amp;controls=0&amp;showinfo=0"
 }
+card: {
+    cardImage: /images/post-assets/cards/grass.jpg,
+    cardAlt: Decovar font demonstrating a growing leaf effect
+}
 demo: {
     url: https://codepen.io/mandymichael/pen/YYaWop,
     authorUrl: http://mandy.dev,

@@ -14,6 +14,10 @@ featureFont: {
     publisher: OH no Type Co,   
     image: /images/post-assets/Image.png
 }
+card: {
+    cardImage: /images/post-assets/cards/mixed-width.jpg,
+    cardAlt: Bandeins Strange Font showing mixed width character B being stretched wider than the a and c characters
+}
 demo: {
     url: http://mandy.dev,
     authorUrl: http://mandy.dev,

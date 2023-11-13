@@ -7,12 +7,16 @@ tags:
     - list
     - weird
 featureFont: {
-    font: Schijn, 
-    author: Arthur Reinders Folmer,
+    font: Woah, 
+    author: Scribble Tone,
     license: Paid/Commercial,
-    url: https://www.typearture.com/schijn/,
-    publisher: Typearture,   
-    image: '/images/post-assets/vf-devs-feature.png'
+    url: (https://www.futurefonts.xyz/scribble-tone/whoa,
+    publisher: Future Fonts,   
+    image: '/images/post-assets/woah.jpg'
+}
+card: {
+    cardImage: /images/post-assets/cards/slinky.jpg,
+    cardAlt: Woah font by OhNo Type Co with text slinky showing the axis
 }
 lastUpdated: '2023-11-06'
 ---

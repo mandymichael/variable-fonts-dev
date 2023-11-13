@@ -14,6 +14,10 @@ featureFont: {
     publisher: Font Bureau,   
     image: /images/post-assets/decovar-grass.jpg
 }
+card: {
+    cardImage: /images/post-assets/cards/rotor.jpg,
+    cardAlt: Close up of the R from the Font Rotor on an angle looking 3D
+}
 lastUpdated: '2023-11-06'
 ---
 

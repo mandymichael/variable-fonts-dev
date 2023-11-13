@@ -62,4 +62,20 @@ export function getPostData(filename) {
   return postData
 }
 
+const pageDirectory = path.join(process.cwd(), 'markdown');
 
+export function getPageData(filename) {
+  const postSlug = filename.replace(/\.md/, "");
+  const filePath = path.join(pageDirectory, `${postSlug}.md`);
+  const fileContent = fs.readFileSync(filePath, "utf-8");
+
+  const { data, content } = matter(fileContent);
+
+  const pageData = {
+      slug: postSlug,
+      ...data,
+      content,
+  };
+
+  return pageData
+}
