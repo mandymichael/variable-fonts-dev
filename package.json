@@ -1,41 +1,29 @@
 {
-  "name": "variablefonts",
-  "version": "1.0.0",
-  "description": "A variable fonts playground",
-  "author": "Mandy Michael",
-  "license": "MIT",
+  "private": true,
   "scripts": {
-    "start": "yarn run dev",
-    "dev": "gulp dev & ELEVENTY_ENV=dev eleventy --serve & yarn run dev:functions",
-    "build": "gulp build & ELEVENTY_ENV=dev eleventy && yarn run build:functions",
-    "seed": "gulp build & ELEVENTY_ENV=seed eleventy",
-    "build:functions": "netlify-lambda build src/lambda",
-    "dev:functions": "netlify-lambda serve src/lambda"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mandymichael/variablefontsdev"
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.7.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
-    "axios": "^0.18.0",
-    "concurrent-transform": "^1.0.0",
-    "dotenv": "^6.2.0",
-    "gulp": "^4.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-image-resize": "^0.13.1",
-    "gulp-sass": "4.0.2",
-    "gulp-uglify": "^3.0.0",
-    "html-minifier": "^3.5.21",
-    "lodash.template": "^4.5.0",
-    "luxon": "^1.22.0",
-    "netlify-lambda": "^1.6.3",
-    "require-dir": "^1.0.0",
-    "rgbaster": "^2.1.1",
-    "xml2js": "^0.4.23"
+    "date-fns": "^2.30.0",
+    "gray-matter": "^4.0.3",
+    "next": "latest",
+    "next-seo": "^6.4.0",
+    "prismjs": "^1.29.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-markdown": "^9.0.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "rehype-raw": "^7.0.0",
+    "rehype-sanitize": "^6.0.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
   },
-  "resolutions": {
-    "terser": "3.14.*"
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0"
   }
 }

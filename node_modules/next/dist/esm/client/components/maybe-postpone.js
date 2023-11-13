@@ -1,0 +1,14 @@
+export function maybePostpone(staticGenerationStore, reason) {
+    // If we aren't performing a static generation or we aren't using PPR then
+    // we don't need to postpone.
+    if (!staticGenerationStore.isStaticGeneration || !staticGenerationStore.experimental.ppr) {
+        return;
+    }
+    // App Route's cannot be postponed, so we only postpone if it's a page. If the
+    // postpone API is available, use it now.
+    const React = require("react");
+    if (typeof React.unstable_postpone !== "function") return;
+    React.unstable_postpone(reason);
+}
+
+//# sourceMappingURL=maybe-postpone.js.map

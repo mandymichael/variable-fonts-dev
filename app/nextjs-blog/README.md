@@ -1,1 +1,0 @@
-Variable fonts for developers 
