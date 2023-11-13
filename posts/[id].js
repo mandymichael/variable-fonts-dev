@@ -5,7 +5,7 @@ import PostContent from '../../components/postContent';
 import Footer from '../../components/footer';
 import HeadBlock from '../../components/head';
 
-import { getAllPostIds, getPostData } from '../../lib/posts';
+import { getAllPostIds, getPostData } from '../../lib/posts/markdown';
 
 export default function Post({ postData  }) {
   return (
