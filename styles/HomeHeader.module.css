@@ -36,16 +36,25 @@
     text-align: center;
     font-size: 1.125rem;
     font-weight: 500;
-    letter-spacing: 1ch;
+    letter-spacing: 0.8em;
     text-transform: uppercase;
-    margin-top: 2.063em;
-    padding-top: 1.313em;
-    padding-bottom: 1.313em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
     border-top: 3px solid #17171C;
     border-bottom: 1px solid #17171C;
     font-family: 'Roboto';
     font-stretch: 25%;
     font-variation-settings: 'opsz' 31;
+}
+
+@media screen and (min-width: 48rem) {
+    .pageHeadingSubtitle {
+        margin-top: 2.063em;
+        letter-spacing: 1ch;
+        padding-top: 1.313em;
+        padding-bottom: 1.313em;
+    }
 }
 
 .intro {

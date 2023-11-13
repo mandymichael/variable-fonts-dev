@@ -2,6 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    height: 7rem;
+}
+
+@media screen and (min-width: 48rem) {
+    .headerContainer {
+        flex-direction: row;
+        height: auto;
+        align-items: center;
+    }
 }
 
 .logo {
@@ -9,8 +19,16 @@
     height: 80px;
 }
 
-.nav {
-    flex-grow: 1;
+@media screen and (max-width: 48rem) {
+    .logo {
+        margin-top: -1rem;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .nav {
+        flex-grow: 1;
+    }
 }
 
 .navList {
@@ -26,16 +44,30 @@
     align-items: center; 
 }
 
-.navItem::after,
-.navItem:first-of-type::before {
+.navItem:not(:nth-last-child(1))::after {
     content: "\25CF";
-    font-size: 0.50rem;
+    font-size: 0.25rem;
+}
+
+@media screen and (min-width: 48rem) {
+    .navItem::after,
+    .navItem:first-of-type::before {
+        content: "\25CF";
+        font-size: 0.50rem;
+    }
 }
 
 .navLink {
-    font-size: 1rem;
-    padding: 0 1.5rem;
+    font-size: 0.975rem;
+    padding: 0 0.75rem;
     text-decoration: none;
+}
+
+@media screen and (min-width: 48rem) {
+    .navLink {
+        font-size: 1rem;
+        padding: 0 1.5rem;    
+    }
 }
 
 .navLink,
@@ -47,3 +79,8 @@
     color: #EB5088;
 }
 
+@media screen and (max-width: 48rem) {
+    .contactLink {
+        display: none;
+    }
+}

@@ -16,7 +16,7 @@ export default function Header() {
                 </ul>
             </nav>
 
-            <a href="/contact">Contact</a>
+            <a href="/contact" className={HeaderStyles.contactLink}>Contact</a>
         </header>   
     )
 }
