@@ -7,8 +7,7 @@ import HeadBlock from '../../components/head';
 
 import { getAllPostIds, getPostData } from '../../lib/posts';
 
-export default function Post({ postData, params  }) {
-  console.log(postData)
+export default function Post({ postData  }) {
   return (
     <Layout>
       <HeadBlock 
