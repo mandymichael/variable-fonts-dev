@@ -1,0 +1,32 @@
+
+.tagGroup {
+    display: flex;
+    align-items: center;
+}
+
+.tagTitle {
+    margin: 0;
+}
+
+.tags {
+    list-style: none;
+    display: flex;
+    padding: 0 0 0 1em;
+    margin: 0;
+}
+
+.tagsSmall {
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+.tag {
+    padding-right: 1em;
+}
+
+.tag:not(:last-of-type):after {
+    content: "\002F";
+    font-size: 0.50rem;
+    padding-left: 1em;
+}
+

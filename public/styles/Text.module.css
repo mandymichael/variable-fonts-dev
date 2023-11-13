@@ -1,0 +1,32 @@
+
+.heading {
+    text-align: center;
+    font-size: clamp(2.75rem, 10 * (1vw) / 2, 4.750rem);
+    color: #2F2F37;
+    margin-top: clamp(3rem, 10 * (1vw) / 2, 6.5rem);
+    margin-bottom: clamp(1rem, 10 * (1vw) / 2, 3.750rem);
+    letter-spacing: -0.1rem;
+
+    /*TODO*/
+    font-family: 'Roslindale Variable';
+}
+
+.metaDataText {
+    font-size: 0.750rem;
+    text-transform: uppercase;
+    font-stretch: 25%;
+    font-weight: 400;
+    letter-spacing: 0.3ch;
+    font-variation-settings: 'grad' -200;
+    align-self: center;
+}
+
+/* Not sure if needed */
+.postMetaText {
+    font-size: 0.750rem;
+    text-transform: uppercase;
+    font-stretch: 25%;
+    letter-spacing: 0.3ch;
+    font-variation-settings: 'grad' -200;
+    font-weight: 700;
+}

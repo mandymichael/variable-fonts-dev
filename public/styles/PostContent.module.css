@@ -1,0 +1,21 @@
+.container {
+    margin: 0 auto 8.125rem auto;
+    padding: 0 1.rem;
+    max-width: 54.688rem;
+    line-height: 1.5;
+    font-stretch: 75%;
+}
+
+@media screen and (min-width: 48em) {
+    .container {
+        padding: 0 7.875rem;
+    }
+}
+
+.inlineCode {
+    background: #e3e6e8;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 0 1ch;
+    font-weight: 480;
+}
