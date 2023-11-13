@@ -167,6 +167,10 @@
     line-height: 1.5;
 }
 
+.cardImage {
+    position: relative;
+}
+
 @media screen and (max-width: 48rem)  {    
     .cardImage {
         display: none;
@@ -188,4 +192,19 @@
     .imageFeature {
         aspect-ratio: 144 / 79;
     }
+}
+
+.featuredPost .cardImage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    width: calc(100% - 6px);
+    height: calc(100% - 1rem - 6px);
+    font-size: 1.5em;
+    border-style: solid;
+    border-width: 0.125em;
+    border-image-source: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox=%220 0 64 64%22%3E%3Crect x=%222%22 y=%222%22 width=%2260%22 height=%2260%22 fill=%22transparent%22 stroke=%22%23000%22 stroke-width=%224%22 %2F%3E%3C%2Fsvg%3E');
+    border-image-slice: 50%;
+    border-image-width: 1em;
 }
