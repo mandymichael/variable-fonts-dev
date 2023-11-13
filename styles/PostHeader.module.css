@@ -63,6 +63,21 @@
     position: relative;
 }
 
+.image::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    height: 100%;
+    left: -1px;
+    font-size: 2em;
+    border-style: solid;
+    border-width: 0.1290322581em;
+    border-image-source: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox=%220 0 62 62%22%3E%3Crect x=%222%22 y=%222%22 width=%2258%22 height=%2258%22 fill=%22transparent%22 stroke=%22%23000%22 stroke-width=%224%22 %2F%3E%3C%2Fsvg%3E');
+    border-image-slice: 50%;
+    border-image-width: 1em;
+}
+
 .figcaption {
     display: flex;
     flex-direction: column;
