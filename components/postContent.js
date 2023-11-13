@@ -9,7 +9,6 @@ import {
 } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 export default function PostContent({postContent}) {
-    console.log(postContent)
     return (
        <div className={`${PostStyles.container} PostContent`}>
             <ReactMarkdown
