@@ -10,7 +10,7 @@ featureFont: {
     font: Woah, 
     author: Scribble Tone,
     license: Paid/Commercial,
-    url: (https://www.futurefonts.xyz/scribble-tone/whoa,
+    url: https://www.futurefonts.xyz/scribble-tone/whoa,
     publisher: Future Fonts,   
     image: '/images/post-assets/woah.jpg'
 }
