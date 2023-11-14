@@ -42,6 +42,15 @@ img {
   width: 25 151
 }
 
+
+@font-face {
+  font-family: Roslindale;
+  src: url(../pages/fonts/RoslindaleVariable.woff2);
+  weight: 200 900;
+  width: 75 100;
+  font-optical-sizing: 10 48;
+}
+
 a {
   color: #EB5088;
   text-decoration: underline;
@@ -162,7 +171,6 @@ pre {
   box-shadow: 0px 10px 20px #17171c75;
 }
 
-
 .videoPlayer {
   position: relative;
   padding-top: 56.25%;
@@ -175,19 +183,3 @@ pre {
   width: 100%;
   height: 100%;
 }
-
-/* .videoPlayer {
-  padding-top: 63%;
-} */
-
-  /* // If it’s bleeding out in a post, it needs more padding
-  .post & {
-    padding-top: 63%;
-  }
-
-  @include media-query('md') {
-    .post & {
-      padding-top: 66%;
-    }
-  }
-} */

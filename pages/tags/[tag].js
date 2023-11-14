@@ -51,38 +51,17 @@ export async function getStaticProps({params}) {
   
   const postData = getSortedPostsData();
 
-
   const articles = getSortedPostsData().filter((post) => {
     const listOfArticles = post.tags && post.tags.includes(params.tag);
       return listOfArticles;
     }
   )
 
-  // const displayList = articles.filter((post) => {
-  //   const lists = post.tags && !post.tags.includes('featured');
-  //       return lists;
-  //   }
-  // );
-
-  // const posts = await getAllPostsWithFrontMatter('blog', params.tag)
-
-  
-
-
-  // const featuredPost = getSortedPostsData().filter((post) => {
-  //   const lists = post.tags && post.tags.includes('featured');
-  //     return lists;
-  //   }
-  // ).slice(0,1);
-
-  
-
   return {
     props: {
       postData,
       articles,
       tag: params.tag
-      // displayList,
-    },
+        },
   };
 }
