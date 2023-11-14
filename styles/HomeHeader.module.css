@@ -22,7 +22,7 @@
 }
 
 .pageHeading {
-    font-size: clamp(3rem, 10vw + 1rem, 8.438rem);
+    font-size: clamp(3rem, 9vw + 1rem, 8.438rem);
     display: flex;
     flex-direction: column;
     align-items: center;

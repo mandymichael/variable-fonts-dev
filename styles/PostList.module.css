@@ -156,10 +156,11 @@
 }
 
 .featuredPostCardHeading {
-    font-size: clamp(1.5rem, 10 * (1vw + 1vh) / 2, 3.5rem);
+    font-size: clamp(1.5rem,6vw + 1rem,3.5rem);
     letter-spacing: -0.02em;
     font-stretch: 62%;
     font-variation-settings: 'opsz' 39;
+    text-wrap: balance;
 }
 
 .featuredPostSummary {
