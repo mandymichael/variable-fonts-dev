@@ -72,7 +72,7 @@ A staple in text effect creation is using a background-image in replace of a col
 
 In order to have the background image be clipped to the text area only we want to set `background-clip` with a value of `text` and we also want to set the `webkit-text-fill-color` to `transparent` to hide the text color. This will reveal the background image we set (See image below).
 
-![Cookie text with a cookie texture background unclipped to text](/images/post-assets/cookiedemo/plaincookie.jpg)
+![Cookie text with a cookie texture background with clipping to text](/images/post-assets/cookiedemo/plaincookie.jpg)
 
 Your CSS should look something like the following.
 
