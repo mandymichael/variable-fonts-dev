@@ -32,9 +32,11 @@ You'll notice a lot of the examples I show are text effects, and with the holida
 
 I've been making text effects for a long time, and one of the biggest drawbacks was that if you wanted to layer different versions of the fonts for the effects you'd have to load multiple versions into the page, which is not great for your page performance. But with variable fonts you don't need to trade your cool effects for performance, because all the "layers" exist within the one font. 
 
-So for this example we'll be layering the font [This Man This Monster](https://www.comicbookfonts.com/This-Man-This-Monster-font-p/dl291.htm) and instead of having multiple slight different versions we'll adjust the variable font axis to give us the effects we want. 
+So for this example we'll be layering the font [This Man This Monster](https://www.comicbookfonts.com/This-Man-This-Monster-font-p/dl291.htm) and instead of having multiple slight different versions we'll adjust the variable font axis to give us the effects we want. There are two versions of this effect, the one below with more perfectly aligned text, and [the simplified one](https://codepen.io/mandymichael/details/WNPEjqa).
 
-<div class="codepen"><div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Scrolling variable font effect change" src="//codepen.io/mandymichael/embed/WNPEjqa/?height=300&theme-id=dark&default-tab=result" frameBorder="no" allowtransparency="true" allowFullScreen="true"></iframe></div></div>
+<div class="codepen"><div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Scrolling variable font effect change" src="//codepen.io/mandymichael/embed/XWrBwRL/?height=300&theme-id=dark&default-tab=result" frameBorder="no" allowtransparency="true" allowFullScreen="true"></iframe></div></div>
+
+For the purposes of this article we'll use the simplified one, the approach is very similar, just the version above uses the JS library splitting.js to split the characters out into individual spans so I could arrange them more accurately. 
 
 In order to accomplish the layering we'll need multiple versions of the text, I used to do this with pseudo-elements but unfortunately that has some accessibility drawbacks so instead we'll just wrap the text in a span and set aria-hidden to the extra ones so we don't get "cookie" reading out multiple times by the assistive tech. We will need three layers, which i'll get to a bit later on, it should look like the following html.
 
@@ -191,9 +193,14 @@ Finally we are going to add another shadow just to make the icing look less flat
 
 ```
 
-This will leave you with something like the following image! You can play around with this however you want, 
+This will leave you with something like the following image! You can play around with this however you want. 
 
 ![Cookie text effect with cookie base and sprinkles on top](/images/post-assets/cookiedemo/cookie-finished.jpg)
 
-I mentioned at the start of the post that this version was not responsive, if you would like a more responsive version of this you can check out the [original cookie text](https://codepen.io/mandymichael/pen/XWrBwRL) I built on codepen. You'll notice this one is slightly different, It also has more control over sizing. To do that I used the [Splitting JS library](https://splitting.js.org/) so I could target each letter individually.
+If you want something a bit more controlled with more perfectly aligned icing (in the end I had to have it as it turns out I was not happy with the misalignment), then you need more specific control over each letter. I accomplished this with [Splitting JS library](https://splitting.js.org/). You could manually split each letter up, but I wanted the text to be easily editable so this was quicker.
+
+![Cookie text effect with cookie base and sprinkles on top but more perfectly aligned](/images/post-assets/cookiedemo/cookie-finished-2.jpg)
+
+
+I mentioned at the start of the post that the version in the post was not responsive. The demo which uses splitting.js is responsive! So if you would like a more responsive version, and the benefit of better alignments you can check out the [Codepen of responsive cookie text](https://codepen.io/mandymichael/pen/XWrBwRL). 
 
