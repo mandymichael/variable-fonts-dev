@@ -7,7 +7,6 @@
 .sectionBorder {
     border-top: 3px solid #17171C;
     margin-top: 5rem;
-
 }
 
 .sectionBorder::before {
@@ -19,13 +18,19 @@
     top: 0;
 }
 
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #17171C;
+    margin-bottom: 2rem;
+}
+
 .sectionHeading {
     font-size: 1.5rem;
     font-stretch: 76%;
     font-weight: 500;
     letter-spacing: 0.02em;
     font-variation-settings: 'opsz' 144;
-    border-bottom: 1px solid #17171C;
 }
 
 .articleList {

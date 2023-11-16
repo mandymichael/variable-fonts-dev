@@ -30,8 +30,8 @@ export default function Home({ recentPosts, articles, fontLists, featuredPost })
       <FeaturedPost featuredPost={featuredPost} />
 
       <PostList posts={recentPosts} title="Recent Posts" tagType="parent" />
-      <PostList posts={articles} title="Articles" columns={4}/>
-      <PostList posts={fontLists} title="Font Lists" columns={4} />
+      <PostList posts={articles} title="Articles" columns={4} postType="article" showMore="true" />
+      <PostList posts={fontLists} title="Font Lists" columns={4} postType="list" showMore="true" />
 
       </main>
 

@@ -4,11 +4,14 @@ import Image from 'next/image';
 import Date from '../components/date';
 import TagList from './tagList';
 
-export default function PostList({posts, title, columns, tagType, postType}) {
+export default function PostList({posts, title, columns, tagType, postType, showMore}) {
 
     return (
         <section className={`${PostListStyles.section} ${PostListStyles.sectionBorder}`}>
-            <h2 className={PostListStyles.sectionHeading}>{title}</h2>
+            <header className={PostListStyles.sectionHeader}>
+                <h2 className={PostListStyles.sectionHeading}>{title}</h2>
+                {showMore && <Link href="/articles">View all {postType}s <span>&rarr;</span></Link>}
+            </header>
             <ul className={`${PostListStyles.articleList} ${columns === 4 && PostListStyles.articleListSmall }`}>
             {posts.map(({ id, date, title, card, tags }) => {
                 return(

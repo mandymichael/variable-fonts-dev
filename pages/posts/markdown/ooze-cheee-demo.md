@@ -114,4 +114,4 @@ h1::after {
 
 You can see the full implementation in the [Codepen](https://codepen.io/mandymichael/pen/pxXNbr) demo. If you would like to check out the dark mode version you can also find that on [Codepen](https://codepen.io/mandymichael/pen/pxXNbr).
 
-<div class="codepen"><div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Oozing Text with Chee" src="//codepen.io/mandymichael/embed/pxXNbr/?height=300&theme-id=dark&default-tab=result" frameBorder="no" allowtransparency="true" allowFullScreen="true"></iframe></div></div>
+<div class="codepen"><div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Oozing Text with Chee" src="//codepen.io/mandymichael/embed/pxXNbr/?height=300&theme-id=dark&default-tab=result" frameBorder="no" allowtransparency="true" allowfullScreen="true"></iframe></div></div>

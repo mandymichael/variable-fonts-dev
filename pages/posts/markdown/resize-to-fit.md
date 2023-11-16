@@ -35,7 +35,7 @@ The flexibility of variable fonts enable developers to create more responsive de
 
 ### The Code
 
-<div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Resize text to fit" src="//codepen.io/mandymichael/embed/NWqaNJL/?height=300&theme-id=dark&default-tab=result" frameBorder="no" allowtransparency="true" allowFullscreen="true">
+<div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Resize text to fit" src="//codepen.io/mandymichael/embed/NWqaNJL/?height=300&theme-id=dark&default-tab=result" frameBorder="no" allowtransparency="true" allowfullScreen="true">
 </iframe></div>
 
 You can either check out the [Demo on Codepen]( https://codepen.io/mandymichael/pen/NWqaNJL) now, or you can read on to get a breakdown.

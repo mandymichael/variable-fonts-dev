@@ -24,9 +24,7 @@ export default function GettingStarted(gettingStarted) {
                         </div>
                     </section>
 
-                    <section className={`${PostStyles.container} PostContent`}>
-                        <PostContent postContent={gettingStarted} />
-                    </section>
+                    <PostContent postContent={gettingStarted} />
 
                 </main>
                 <Footer />
