@@ -14,7 +14,12 @@ featureFont: {
     license: Open Source,
     url: https://velvetyne.fr,
     publisher: Velvetyne Type Foundry,   
-    video: https://www.youtube-nocookie.com/embed/ivz1hdAhJmE?rel=0&amp;playlist=ivz1hdAhJmE&amp;controls=0&amp;showinfo=0
+    video: https://www.youtube-nocookie.com/embed/ivz1hdAhJmE?rel=0&amp;playlist=ivz1hdAhJmE&amp;controls=0&amp;showinfo=0,
+    image: /images/post-assets/cards/lightsensor.jpg,
+}
+card: {
+    cardImage: /images/post-assets/cards/lightsensor.jpg,
+    cardAlt: Light sensor screen shot
 }
 demo: {
     url: https://codepen.io/mandymichael/pen/Mdoxpg,

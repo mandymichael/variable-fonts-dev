@@ -31,7 +31,7 @@ lastUpdated: '2023-11-06'
 
 Scrolling text effects can help to unify a design and content by linking your animation and effects with the text itself. My goal with this demo is to demonstrate how you can use variable fonts to create these animations similar to how we bring in or change content as the users scrolls. The aim is the feeling that as we scroll down to the bottom of the page the text feels as though it's falling and then "plops" onto the floor.
 
-<div class="codepen"><div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Scrolling variable font effect change" src="//codepen.io/mandymichael/embed/LJeZBO/?height=300&theme-id=dark&default-tab=result" frameBorder="no" allowtransparency="true" allowFullScreen="true"></iframe></div></div>
+<div class="codepen"><div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Scrolling variable font effect change" src="//codepen.io/mandymichael/embed/LJeZBO/?height=300&theme-id=dark&default-tab=result" frameBorder="no" allowtransparency="true" allowfullScreen="true"></iframe></div></div>
 
 I previously used Chee in the <a href="/ooze-cheee-demo">Ooze Demo</a> using the `temp axis`. In this example we'll be using the `yest` and `gvty` axes. I try to use CSS where possible for animation, but in order to utilise the scroll we'll use a CSS Custom Property and connect it up with the browser scroll event using some JavaScript.
 

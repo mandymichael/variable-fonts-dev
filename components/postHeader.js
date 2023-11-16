@@ -8,20 +8,28 @@ export default function PostHeader({title, summary, featureFont, featureAlt, dem
         <h1 className={PostHeaderStyles.heading}>{title}</h1>
         <p className={PostHeaderStyles.summary}>{summary}</p>
         <figure className={PostHeaderStyles.figure}>
-            {featureFont.image &&
+            {featureFont && featureFont.image && !featureFont.video &&
                 <picture className={`${PostHeaderStyles.image}`}><Image src={featureFont.image} width="1088" height="599" alt={featureAlt && featureAlt}  /></picture>
             }
 
-            {featureFont.video && 
+            {featureFont && featureFont.video && 
                 <div className="videoPlayer">
                     <iframe width="1088" height="599" src={featureFont.video}  frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
                 </div>
             }
             
-            <figcaption className={PostHeaderStyles.figcaption}>
-                <p><Link href={featureFont.url}>{featureFont.font}</Link> by {featureFont.author} is {featureFont.license}</p>
-                {demo && <p>Code by <Link href={demo.authorUrl}>{demo.author}</Link> available on <Link href={demo.url}>Codepen</Link></p>}
-            </figcaption>
+            { featureFont && featureFont.author &&
+                <figcaption className={PostHeaderStyles.figcaption}>
+                    <p><Link href={featureFont.url}>{featureFont.font}</Link> by {featureFont.author} is {featureFont.license}</p>
+                    {demo && <p>Code by <Link href={demo.authorUrl}>{demo.author}</Link> available on <Link href={demo.url}>Codepen</Link></p>}
+                </figcaption>
+            }
+
+            { featureFont && featureFont.caption &&
+                <figcaption className={PostHeaderStyles.figcaption}>
+                    <p>{featureFont.caption}</p>
+                </figcaption>
+            }
         </figure>
        </div>
     )

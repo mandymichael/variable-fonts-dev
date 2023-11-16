@@ -1,6 +1,6 @@
 ---
 title: Cookie Effect layering with Variable Fonts
-date: '2023-11-13'
+date: '2023-11-14'
 summary: Creating layered text effects is easily accomplished with variable fonts without any of the performance drawbacks of loading multiple font files.
 tags:
     - effect

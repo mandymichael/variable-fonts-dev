@@ -7,11 +7,8 @@ tags:
     - weights
     - featured
 featureFont: {
-    font: Condor, 
-    author: David Jonathan Ross,
-    license: Paid/Commercial,
-    url: https://djr.com/condor,
-    image: /images/post-assets/Image.png,
+    caption: Variable fonts with a large weight range,
+    image: /images/post-assets/cards/weight-range-featured.jpg,
 }
 demo: {
     url: http://mandy.dev,
@@ -20,8 +17,8 @@ demo: {
 }
 card: {
     featured: /images/post-assets/cards/weight-range-featured.jpg,
-    cardImage: /images/post-assets/cards/weight-range.jpg,
-    cardAlt: The a character in different font widths,
+    cardImage: /images/post-assets/cards/weights.jpg,
+    cardAlt: Mixed fonts with a varying weight range in different colours and styles.,
     cardFeaturedSummary: Variable font with a very large weight range can provide more flexibility in designs and experiments. Having a large weight range can give you the capabilities of representing text that is very bold as well as very thin without the need for multiple fonts and maintain the cohesion you get from using the same typeface.
 }
 ---
@@ -32,7 +29,7 @@ This is not an extensive list, there are a lot of really great variable fonts wi
 
 ## Condor <span class="author">By David Jonathan Ross</span>
 
- ![Black and white demo of condor with a wide thin and thick weight axis"](/images/post-assets/condor.png)
+ ![Black and white demo of condor with a wide thin and thick weight axis"](/images/post-assets/weights/condor.jpg)
 
 Condor is probably my favourite within my "weight" category (I don't like to say I have favourites but I do). It's high-contrast and there is a decent difference between it's thin and thick weights.
 
@@ -44,7 +41,7 @@ When it comes to variable fonts you really can't go wrong with any made by David
 
 ## Jost <span class="author">By Owen Earl</span>
 
-![Black and white demo of Jost font weights, thin and thick"](/images/post-assets/jost.png)
+![Black and white demo of Jost font weights, thin and thick"](/images/post-assets/weights/jost.jpg)
 
 It would be remiss of me to not include Jost on this list given I use it on this site as body text. Call me a bit biased but I'm a bit partial to Jost.
 
@@ -57,7 +54,7 @@ Jost is actively being developed, so it has new features and improvements releas
 
 ## Antarctica VAR  <span class="author">By Ian Party</span>
 
-![Black and white demo of Antarctica font weights, thin and thick"](/images/post-assets/antartica.png)
+![Black and white demo of Antarctica font weights, thin and thick"](/images/post-assets/weights/antartica.jpg)
 
 Antarctica has a very large range with the weight axis, it's basically hairline at the starting weight and super chunky at the end weight.
 
@@ -69,7 +66,7 @@ The wide range of variation makes this font great for body text but also good fo
 
 ## Work Sans <span class="author">By Wei Huang <span class="author">
 
-![Black and white demo of work sans light and heaviest weight font"](/images/post-assets/work-sans.png)
+![Black and white demo of work sans light and heaviest weight font"](/images/post-assets/weights/worksans.jpg)
 
 As far as free variable fonts go, Work Sans has a pretty good weight range. The 900 weight is fairly chunky and it's gree on Google Fonts so it's a good option.
 
@@ -80,7 +77,7 @@ With Work Sans the middle of the range weights are better for the medium sizes w
 
 ## Newsreader <span class="author">By Hugues Gentile</span>
 
-![Black and white demo of newsreader an old style newspaper font with a wide thin and thick weight axis"](/images/post-assets/newsreader.png)
+![Black and white demo of newsreader an old style newspaper font with a wide thin and thick weight axis"](/images/post-assets/weights/newsreader.jpg)
 
 Newsreader, I guess as per the name, gives me newspaper vibes. The Serif fonts tend not to have an extensive weight range as the Sans fonts, but this one gives you a nice range, and I liked the sharp lines. From the weightier Serif variable fonts I've seen, they tend to lose that sharpness, but not this one!
 

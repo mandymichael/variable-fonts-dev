@@ -4,6 +4,7 @@
     max-width: 54.688rem;
     line-height: 1.5;
     font-stretch: 75%;
+    text-wrap: pretty;
 }
 
 @media screen and (min-width: 48em) {
