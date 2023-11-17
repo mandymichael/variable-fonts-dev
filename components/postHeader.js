@@ -9,12 +9,12 @@ export default function PostHeader({title, summary, featureFont, featureAlt, dem
         <p className={PostHeaderStyles.summary}>{summary}</p>
         <figure className={PostHeaderStyles.figure}>
             {featureFont && featureFont.image && !featureFont.video &&
-                <picture className={`${PostHeaderStyles.image}`}><Image src={featureFont.image} width="1088" height="599" alt={featureAlt && featureAlt}  /></picture>
+                <picture className={`${PostHeaderStyles.image}`}><Image loading="eager" src={featureFont.image} width="1088" height="599" alt={featureAlt && featureAlt}  /></picture>
             }
 
             {featureFont && featureFont.video && 
                 <div className="videoPlayer">
-                    <iframe width="1088" height="599" src={featureFont.video}  frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
+                    <iframe width="1088" height="599" src={featureFont.video} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
                 </div>
             }
             
