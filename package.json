@@ -26,5 +26,11 @@
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
     "mini-css-extract-plugin": "^2.7.6"
+  },
+  "nextBundleAnalysis": {
+    "budget": null,
+    "budgetPercentIncreaseRed": 20,
+    "minimumChangeThreshold": 0,
+    "showDetails": true
   }
 }
