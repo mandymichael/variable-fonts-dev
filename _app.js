@@ -9,10 +9,10 @@ function App({ Component, pageProps }) {
     <>
       <style jsx global>{`
         html {
-          font-family: ${roboto.style.fontFamily};
+          font-family: ${roboto.style.fontFamily}, arial, sans-serif;
         }
         h1 {
-          font-family: ${roslindale.style.fontFamily};
+          font-family: ${roslindale.style.fontFamily}, 'Times New Roman', serif;
         }
       `}</style>
       <Component {...pageProps} />

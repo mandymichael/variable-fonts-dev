@@ -39,7 +39,8 @@ img {
   font-family: Roboto;
   src: url(../pages/fonts/RobotoFlex.woff2);
   weight: 100 1000;
-  width: 25 151
+  width: 25 151;
+  font-display: swap;
 }
 
 
@@ -49,6 +50,7 @@ img {
   weight: 200 900;
   width: 75 100;
   font-optical-sizing: 10 48;
+  font-display: swap;
 }
 
 a {

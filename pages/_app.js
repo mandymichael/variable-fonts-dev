@@ -14,7 +14,6 @@ function App({ Component, pageProps }) {
 
         h1 {
           font-family: ${roslindale.style.fontFamily};
-
         }
       `}</style>
       <Component {...pageProps} />
