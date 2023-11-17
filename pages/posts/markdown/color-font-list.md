@@ -29,7 +29,7 @@ There aren't a whole lot of variable colour fonts available right now, but lets 
 
 ## Rocher Color <span class="author">Henrique Beier</span>
 
-![Color variable font Rocher in pink shades creating a blocking style with a dark blue shadow"](/images/post-assets/color-font/rocher-color.jpg)
+![Color variable font Rocher in pink shades creating a blocking style with a dark blue shadow](/images/post-assets/color-font/rocher-color.jpg)
 
 Rocher Color is an experimental variable color font with 2 axes (bevel and shadow), it comes with 11 color palettes built in (but you can always create your own as well). The font was inspired by Merit Badge, a variable color font designed by David Jonathan Ross (featured below).
 
@@ -44,7 +44,7 @@ Henrique has a great post about [The Making of Rocher Color](https://www.harbort
 
 ## Merit Badge <span class="author">By David Jonathan Ross</span>
 
-![Font merit badge, blue color with light blue outline, has open ends like a pipe sitting on a gradient dark teal background"](/images/post-assets/color-font/merit-badge.jpg)
+![Font merit badge, blue color with light blue outline, has open ends like a pipe sitting on a gradient dark teal background](/images/post-assets/color-font/merit-badge.jpg)
 
 Merit badge by David Jonathon Ross, was the second variable colour font ever made (cool hey). It has a weight axis which adjusts the thickness of the outlines and a custom axis called 'sans' which allows you to adjust the serifs (full, none or somewhere in between). 
 
@@ -57,7 +57,7 @@ It's a little quirky and sort of has that 'gaspipe' feel, perfect for text effec
 
 ## Nabla  <span class="author">By Arthur Reinders Folmer, Just van Rossum</span>
 
-![Color variable font Nabla in pinks and purples, rotated slightly with 3d highlights with a mustard background"](/images/post-assets/color-font/nabla-color.jpg)
+![Color variable font Nabla in pinks and purples, rotated slightly with 3d highlights with a mustard background](/images/post-assets/color-font/nabla-color.jpg)
 
 Nabla, available on Google Fonts, is inspired by vintage computer games and features a depth and highlight axis allowing you control over gradients highlights and blended shadows. It utilises the new the COLRv1 color-font format which enables the gradient features in the font.
 
@@ -70,7 +70,7 @@ What I love about this font is just how perfectly it's been executed, its except
 ## Foldit  <span class="author">Sophia Tai</span>
 
 
-![Color variable font Foldit in blue and teal with paper folds in font, background is dark blue"](/images/post-assets/color-font/foldit-color.jpg)
+![Color variable font Foldit in blue and teal with paper folds in font, background is dark blue](/images/post-assets/color-font/foldit-color.jpg)
 
 Foldit is an absolutely stunning font available on Google Fonts, this kind of paper folding texture is very well sort after in text effect land and frankly it's really hard to make with regular fonts. So having the style built directly into the font is incredible.
 

@@ -1,7 +1,7 @@
 import PostStyles from '../styles/PostContent.module.css';
 import ReactMarkdown from 'react-markdown'
-import rehypeSanitize from 'rehype-sanitize'
 import rehypeRaw from 'rehype-raw';
+import Image from 'next/image'
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import {
@@ -32,6 +32,32 @@ export default function PostContent({postContent}) {
                         </code>
                         )
                     },
+                    p: paragraph => {
+                        const { node } = paragraph
+                          
+                          if (node.children[0].tagName === "img") {
+                            const image = node.children[0]
+                            const metastring = image.properties.alt
+                            const alt = metastring?.replace(/ *\{[^)]*\} */g, "")
+                            const metaWidth = metastring.match(/{([^}]+)x/)
+                            const metaHeight = metastring.match(/x([^}]+)}/)
+                            const width = metaWidth ? metaWidth[1] : "621"
+                            const height = metaHeight ? metaHeight[1] : "238"
+                            const isPriority = metastring?.toLowerCase().match('{priority}')
+                            
+                            return (
+                              <Image
+                                src={image.properties.src}
+                                width={width}
+                                height={height}
+                                alt={image.properties.alt}
+                                loading="lazy"
+                                priority={isPriority}
+                              />
+                            )
+                          }
+                        return <p>{paragraph.children}</p>
+                      },
                 }}
             >
                 {postContent.content}

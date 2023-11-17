@@ -27,7 +27,7 @@ It's pretty hard to choose my favourites because it's really going to depend on 
 
 ## Decovar,  <span class="author">By David Berlow</span>
 
-![Black and white demo of decovar font with text Decovar"](/images/post-assets/decovar.png)
+![Black and white demo of decovar font with text Decovar](/images/post-assets/decovar.png)
 
 This font features a lot on my lists because of it's sheer number of axis. With it's many, often strange axis it really is a good font to try if you want to create an effect. I find that it takes some tweaking of the axis or just a bit of playing around to get it how I want. You can do this a few ways, I have a basic Codepen set up with this font that I just mess around with the axis until it looks how I want. Alternatively you can chuck it in your site and use the Firefox dev tools to do the same thing.
 
@@ -36,7 +36,7 @@ This font features a lot on my lists because of it's sheer number of axis. With 
 
 ## Kicker Variable,  <span class="author">By Scribble Tone</span>
 
-![Black and white demo of kicker font"](/images/post-assets/kickervariable.png)
+![Black and white demo of kicker font](/images/post-assets/kickervariable.png)
 
 Kicker variable offers three axis and it is designed to be layered. When it comes to creating text effects layers matter so having 1 font which does 3 different layers is extremely useful. This saves on file size and performance so that makes it a big win.
 
@@ -47,7 +47,7 @@ With Kicker you can mix and match the thicknesses to create and outline or inlin
 
 ## Rotor,  <span class="author">By Jan Sindler</span>
 
-![Black and white demo of rotor font"](/images/post-assets/rotor.png)
+![Black and white demo of rotor font](/images/post-assets/rotor.png)
 
 Rotor is monospaced monolinear typeface, it can be rotated to read from both directions. This font is particularly good for animation text effects, for example, revealing text. Additionally it's great for layering for creating 3D like shadows by stacking the characters on top of each other at different rotations.
 
@@ -60,7 +60,7 @@ You can even make mirrored text.
 
 ## OC Format Shards  <span class="author">by Andrew Bellamy</span>
 
-![Black and white demo of shards font"](/images/post-assets//shards.png)
+![Black and white demo of shards font](/images/post-assets//shards.png)
 
 OC Format Shards makes the list maybe for obvious reasons. Maybe text effects require a shatter or a fragment, and while you can create these kinds of effects with layering having it built in to the font makes it a lot easier to work with and creates more realistic shattering effects.
 

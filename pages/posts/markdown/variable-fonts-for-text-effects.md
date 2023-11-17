@@ -23,7 +23,7 @@ lastUpdated: '2023-11-06'
 
 ## Decovar  <span class="author">By David Berlow</span>
 
-![Black and white demo of decovar font with text Decovar"](/images/post-assets/decovar.png)
+![Black and white demo of decovar font with text Decovar](/images/post-assets/decovar.png)
 
 Decovar was the first variable font I ever used, it was the first variable font to get me excited about variable fonts, and it remains one of the most versatile and useful fonts for making effects and doing weird stuff with. 
 
@@ -38,7 +38,7 @@ There is a great article about [Decovar back in 2016](https://medium.com/variabl
 
 ## Woah  <span class="author">By Scribble Tone</span>
 
-![Black and white demo of woah font"](/images/post-assets/woah.png)
+![Black and white demo of woah font](/images/post-assets/woah.png)
 
 As it's name suggests this font is pretty amazing. If you are looking to do something to make people go "oh my gosh that is so cool" this is the one for you.
 
@@ -53,7 +53,7 @@ I've made a demo on Codepen using an older version of this font, the newer versi
 ## Cheee  <span class="author">by OhNo Type Co</span>
 
 
-![Black and white demo of Cheee font with drip axis that makes it look like the text is dripping"](/images/post-assets/chee.png)
+![Black and white demo of Cheee font with drip axis that makes it look like the text is dripping](/images/post-assets/chee.png)
 
 If you have checked out any of my other posts you might recognise this font because I use it quite a lot in my demos. What I really like about this font is that it can be used to create a number of completely different effects. I've used it for [slime](https://codepen.io/mandymichael/details/pxXNbr), [snow globes](https://codepen.io/mandymichael/details/ZEENGyJ), [underwater](https://codepen.io/mandymichael/details/LJeZBO), audio effects. It really is very versatile.
 
@@ -67,7 +67,7 @@ What I think makes it suitable for my this list of weird variable fonts is by fa
 
 [Buy Schijn](https://www.typearture.com/schijn/)
 
-![Black and white demo of Schijn font with axis that makes it look like diamonds"](/images/post-assets/schijn.png)
+![Black and white demo of Schijn font with axis that makes it look like diamonds](/images/post-assets/schijn.png)
 
 Typearture, in my opinion, make some of the most incredible fonts you will find. What I love about them is they push the boundaries of what is considered a font. There is no shying away from creating something, fun, interesting and cool.
 

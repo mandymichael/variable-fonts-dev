@@ -1,9 +1,14 @@
 import Layout from '../../components/layout';
 import PostMeta from '../../components/postMeta';
 import PostHeader from '../../components/postHeader';
-import PostContent from '../../components/postContent';
 import Footer from '../../components/footer';
 import HeadBlock from '../../components/head';
+import dynamic from 'next/dynamic';
+
+
+const PostContent = dynamic(() => import('../../components/postContent'), {
+  ssr: true,
+});
 
 import { getAllPostIds, getPostData } from '../../lib/posts';
 
@@ -22,6 +27,7 @@ export default function Post({ postData  }) {
           summary={postData.summary} 
           featureFont={postData.featureFont} 
           demo={postData.demo}
+          featureAlt={postData.featureAlt}
          />
 
         <PostContent postContent={postData} />
