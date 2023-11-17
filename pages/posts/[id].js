@@ -27,7 +27,6 @@ export default function Post({ postData  }) {
           summary={postData.summary} 
           featureFont={postData.featureFont} 
           demo={postData.demo}
-          featureAlt={postData.featureAlt}
          />
 
         <PostContent postContent={postData} />

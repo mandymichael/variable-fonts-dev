@@ -2,14 +2,15 @@ import PostHeaderStyles from '../styles/PostHeader.module.css';
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function PostHeader({title, summary, featureFont, featureAlt, demo}) {
+export default function PostHeader({title, summary, featureFont, demo}) {
     return (
        <div className={PostHeaderStyles.container}>
         <h1 className={PostHeaderStyles.heading}>{title}</h1>
         <p className={PostHeaderStyles.summary}>{summary}</p>
         <figure className={PostHeaderStyles.figure}>
             {featureFont && featureFont.image && !featureFont.video &&
-                <picture className={`${PostHeaderStyles.image}`}><Image loading="eager" src={featureFont.image} width="1088" height="599" alt={featureAlt && featureAlt}  /></picture>
+                
+                <picture className={`${PostHeaderStyles.image}`}><Image loading="eager" src={featureFont.image} width="1088" height="599" alt={featureFont.featureAlt && featureFont.featureAlt}  /></picture>
             }
 
             {featureFont && featureFont.video && 
