@@ -17,7 +17,7 @@ export default function Footer() {
                         <li className={FooterStyles.navItem}><Link href="/lists" className={FooterStyles.navLink}>Font Lists</Link></li>
                         <li className={FooterStyles.navItem}><Link href="/articles" className={FooterStyles.navLink}>Articles</Link></li>
                         <li className={FooterStyles.navItem}><Link href="/about" className={FooterStyles.navLink}>About</Link></li>
-                        <li className={FooterStyles.navItem}><Link href="/contact" className={FooterStyles.navLink}>Contact</Link></li>
+                        <li className={FooterStyles.navItem}><Link href="https://www.linkedin.com/in/mandykerr" target="_blank" className={FooterStyles.navLink}>Contact</Link></li>
                     </ul>
                 </nav>
 
