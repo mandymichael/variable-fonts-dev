@@ -8,6 +8,7 @@ tags:
     - seasonal
     - demo
     - article
+    - featured
 featureFont: {
     font: The Man This Monster, 
     author:  John Roshell,
@@ -19,20 +20,24 @@ featureFont: {
 }
 card: {
     cardImage: /images/post-assets/cards/cookie-demo.jpg,
-    cardAlt: Text that says yum with a cookie base and white icing and sprinkles on top the background is a christmas theme
+    cardAlt: Text that says yum with a cookie base and white icing and sprinkles on top the background is a christmas theme,
+    featured: /images/post-assets/cards/cookie-demo.jpg,
+    cardFeaturedSummary: You'll notice a lot of the examples I show are text effects and with the holiday season around the corner I've got a few holiday themed effects to share that make the most of variable fonts. This one might be a little more versatile all year round but with cookie decorating a seasonal staple it seemed appropriate to take a look at.
 }
 demo: {
     url: https://codepen.io/mandymichael/pen/XWrBwRL,
     authorUrl: http://mandy.dev,
     author: Mandy Michael,
 }
+
+
 ---
 
 You'll notice a lot of the examples I show are text effects, and with the holiday season around the corner I've got a few holiday themed effects to share that make the most of variable fonts. 
 
 I've been making text effects for a long time, and one of the biggest drawbacks was that if you wanted to layer different versions of the fonts for the effects you'd have to load multiple versions into the page, which is not great for your page performance. But with variable fonts you don't need to trade your cool effects for performance, because all the "layers" exist within the one font. 
 
-So for this example we'll be layering the font [This Man This Monster](https://www.comicbookfonts.com/This-Man-This-Monster-font-p/dl291.htm) and instead of having multiple slight different versions we'll adjust the variable font axis to give us the effects we want. There are two versions of this effect, the one below with more perfectly aligned text, and [the simplified one](https://codepen.io/mandymichael/details/WNPEjqa).
+So for this example we'll be layering the font [This Man This Monster](https://www.comicbookfonts.com/This-Man-This-Monster-font-p/dl291.htm) and instead of having multiple slight different versions we'll adjust the variable font axis to give us the effects we want. There are two versions of this effect, the one below with more perfectly aligned text, and [the simplified one](https://codepen.io/mandymichael/details/WNPEjqa).  I will note that this font was not made to be layered. So it is a little tricky, we'll address that later.
 
 <div class="codepen"><div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Scrolling variable font effect change" src="//codepen.io/mandymichael/embed/XWrBwRL/?height=300&theme-id=dark&default-tab=result" frameBorder="no" allowtransparency="true" allowfullScreen="true"></iframe></div></div>
 

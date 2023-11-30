@@ -16,7 +16,7 @@ export default function PostList({posts, title, columns, tagType, postType, show
             {posts.map(({ id, date, title, card, tags }) => {
                 return(
                 <li key={id} className={PostListStyles.articleListItem}>
-                    <Link href={`/posts/${id}`}><Image className={PostListStyles.image} width="440" height="442" src={card ? card.cardImage : '/images/post-assets/cards/default.jpg'} alt={card ? card.cardAlt : 'default post image'} /></Link>
+                    <Link href={`/posts/${id}`}><Image className={PostListStyles.image} quality={90} width="440" height="442" src={card ? card.cardImage : '/images/post-assets/cards/default.jpg'} alt={card ? card.cardAlt : 'default post image'} /></Link>
                     <div className={PostListStyles.content}>
 
                         {tagType === 'parent' &&

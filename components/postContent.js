@@ -42,7 +42,7 @@ export default function PostContent({postContent}) {
                             const metaWidth = metastring.match(/{([^}]+)x/)
                             const metaHeight = metastring.match(/\dx([^}]+)}/)
                             const width = metaWidth ? metaWidth[1] : "621"
-                            const height = metaHeight ? metaHeight[1] : "238"
+                            const height = metaHeight ? metaHeight[1] : "123"
                             const isPriority = metastring?.toLowerCase().match('{priority}')
                             
                             return (

@@ -41,25 +41,31 @@ export default function Home({ recentPosts, articles, fontLists, featuredPost })
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
-  const recentPosts = getSortedPostsData().slice(0,3);
 
-  const articles = getSortedPostsData().filter((post) => {
-    const listOfArticles = post.tags && post.tags.includes('article');
-      return listOfArticles;
-    }
-  ).slice(0,4);
-
-  const fontLists = getSortedPostsData().filter((post) => {
-    const lists = post.tags && post.tags.includes('list');
-      return lists;
-    }
-  ).slice(0,4);
-  
   const featuredPost = getSortedPostsData().filter((post) => {
     const lists = post.tags && post.tags.includes('featured');
       return lists;
     }
   ).slice(0,1);
+
+  const recentPosts = getSortedPostsData().filter((post) => {
+    const recent =  post.id !== featuredPost[0].id;
+      return recent;
+    }
+  ).slice(0,3);
+
+  const articles = getSortedPostsData().filter((post) => {
+      const listOfArticles = post.tags && post.tags.includes('article') && post.id !== featuredPost[0].id;
+      return listOfArticles;
+    }
+  ).slice(0,4);
+
+  const fontLists = getSortedPostsData().filter((post) => {
+    const lists = post.tags && post.tags.includes('list') && post.id !== featuredPost[0].id;
+      return lists;
+    }
+  ).slice(0,4);
+  
 
   return {
     props: {
