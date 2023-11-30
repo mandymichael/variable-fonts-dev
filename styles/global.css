@@ -103,13 +103,43 @@ iframe {
   display: block;
 }
 
+blockquote {
+  font-size: 2rem;
+  font-weight: 500;
+  font-variation-settings: 'opsz' 144;
+  font-stretch: 76%;
+  position: relative;
+  line-height: 1.125;
+  margin: 4rem 0;
+
+  &::before {
+    content: "\201C";
+    font-family: Roslindale, 'Times New Roman', serif;
+    position: absolute;
+    font-size: 3em;
+    top: -0.2em;
+    left: -0.6em;
+    color: #C22E84;
+  }
+}
+
+cite {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-style: normal;
+  margin-top: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #17171c75;
+}
+
 .author {
   display: block;
   font-size: 0.5em;
   letter-spacing: 0;
 }
 
-.PostContent p:has(img),
+.PostContent .imageContainer,
 .PostContent iframe,
 .PostContent pre {
   position: relative;
@@ -118,14 +148,14 @@ iframe {
 }
 
 @media screen and (min-width: 48em) {
-  .PostContent p:has(img),
+  .PostContent .imageContainer,
   .PostContent iframe,
   .PostContent pre {
     margin: 6rem 0;
   }
 }
 
-.PostContent p:has(img)::before,
+.PostContent .imageContainer::before,
 .codepen::before,
 .PostContent iframe::before,
 .PostContent pre::before {
@@ -141,7 +171,7 @@ iframe {
 }
 
 @media screen and (min-width: 48em) {
-  .PostContent p:has(img)::before,
+  .PostContent .imageContainer::before,
   .codepen::before,
   .PostContent iframe::before,
   .PostContent pre::before {
@@ -154,7 +184,7 @@ iframe {
 
 }
 
-.PostContent p > img,
+.PostContent .imageContainer > img,
 iframe,
 pre {
   box-shadow: 0px 10px 20px #17171c75;

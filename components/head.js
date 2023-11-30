@@ -1,9 +1,12 @@
 import Head from 'next/head';
 
-export default function HeadBlock({title, description, url, keywords}) {
+export default function HeadBlock({title, description, url, keywords, customStyles}) {
+
     return (
         <Head>
             <title>{title}</title>
+            {customStyles === 'roslindale' && <link rel="stylesheet" href="/customStyles/roslindale.css"/>}
+
             <meta name="title" content={title} />
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />
@@ -20,6 +23,8 @@ export default function HeadBlock({title, description, url, keywords}) {
             <meta property="og:image" content="/images/metadata/Image.png" />
 
             <link rel="icon" href="/favicon.ico" />
+
+
         </Head> 
     )
 }

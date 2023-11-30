@@ -16,6 +16,7 @@ featureFont: {
     publisher: Velvetyne Type Foundry,   
     video: https://www.youtube-nocookie.com/embed/ivz1hdAhJmE?rel=0&amp;playlist=ivz1hdAhJmE&amp;controls=0&amp;showinfo=0,
     image: /images/post-assets/cards/lightsensor.jpg,
+    featureAlt: Light sensor demo screenshot using font called Tiny made up of dots of different weights
 }
 card: {
     cardImage: /images/post-assets/cards/lightsensor.jpg,

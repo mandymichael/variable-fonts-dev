@@ -10,7 +10,7 @@ tags:
 featureFont: {
     font: Chee, 
     author: James Edmondson,
-    license: Paid/Commercial,
+    license: available to buy,
     url: https://www.futurefonts.xyz/ohno,
     publisher: OH no Type Co,   
     video: https://www.youtube-nocookie.com/embed/7daahuvsQz4?rel=0&amp;controls=0&amp;showinfo=0,

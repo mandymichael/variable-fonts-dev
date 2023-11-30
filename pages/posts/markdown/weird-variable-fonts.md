@@ -12,7 +12,8 @@ featureFont: {
     license: Open Source,
     url: https://www.typenetwork.com/brochure/decovar-a-decorative-variable-font-by-david-berlow,
     publisher: Font Bureau,   
-    image: /images/post-assets/decovar-grass.jpg
+    image: /images/post-assets/decovar-grass.jpg,
+    featureAlt: Screenshot of demo featuring decovar font styled to look like its growing leaves like grass or tree
 }
 card: {
     cardImage: /images/post-assets/cards/rotor.jpg,

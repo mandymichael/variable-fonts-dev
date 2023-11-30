@@ -13,7 +13,8 @@ featureFont: {
     license: Open source,
     url:  https://fonts.google.com/specimen/Fira+Code?selection.family=Fira+Code,
     publisher: Nikita Prokopov, also available on Google Fonts,   
-    image: '/images/post-assets/fira-code.png'
+    image: /images/post-assets/fira-code.png,
+    featureAlt: Fira Code in different weights on a pink background,
 }
 card: {
     cardImage: /images/post-assets/cards/fira-code.jpg,

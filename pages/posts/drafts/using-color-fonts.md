@@ -10,7 +10,7 @@ tags:
 featureFont: {
     font: Irregardless, 
     author: James Edmondson,
-    license: Paid/Commercial,
+    license: available to buy,
     url: https://ohnotype.co/fonts/irregardless,
     publisher: OH no Type Co,   
     image: /images/post-assets/Image.png

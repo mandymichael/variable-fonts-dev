@@ -4,7 +4,7 @@ import PostHeader from '../../components/postHeader';
 import Footer from '../../components/footer';
 import HeadBlock from '../../components/head';
 import dynamic from 'next/dynamic';
-
+import { RoslindaleMouseControl, marqueeScroll } from '../../lib/variablefonts';
 
 const PostContent = dynamic(() => import('../../components/postContent'), {
   ssr: true,
@@ -13,13 +13,20 @@ const PostContent = dynamic(() => import('../../components/postContent'), {
 import { getAllPostIds, getPostData } from '../../lib/posts';
 
 export default function Post({ postData  }) {
+
+  if(postData.slug === 'roslindale' ) {
+    RoslindaleMouseControl();
+    marqueeScroll();
+  }
+ 
   return (
     <Layout>
       <HeadBlock 
         title={postData.title} 
         description={postData.summary}
-        url={`/posts/${postData.slug}`}  />
-        
+        url={`/posts/${postData.slug}`} 
+        customStyles={postData.slug === 'roslindale' && 'roslindale'}
+      />
       <PostMeta dateTime={postData.date} tags={postData.tags} />
       <article>
         <PostHeader 

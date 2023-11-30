@@ -12,7 +12,8 @@ featureFont: {
     license: Paid/Commercial,
     url: https://www.futurefonts.xyz/scribble-tone/whoa,
     publisher: Future Fonts,   
-    image: '/images/post-assets/woah.jpg'
+    image: /images/post-assets/woah.jpg,
+    featureAlt: Screenshot of demo featuring the woah font that looks like a slinky
 }
 card: {
     cardImage: /images/post-assets/cards/slinky.jpg,
