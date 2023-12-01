@@ -24,7 +24,7 @@ Where variable fonts added new axis to combine multiple font styles into the one
 
 Essentially Color Fonts allow font designers to merge multiple color layers into one font file and assign a color to each layer. They come with one or more colour palettes predetermined but developers can access and change these values through CSS using the `font-palette` property. 
 
-[Support](https://caniuse.com/colr-v1) for variable color fonts is pretty good, you might find some discrepancies with rendering between the browsers, but they are still something you can use now. Check out my latest list of cool colour fonts you can play with now [Color font list](/posts/color-font-list).
+[Support](https://caniuse.com/colr-v1) for variable color fonts is pretty good, you might find some discrepancies with rendering between the browsers, but they are still something you can start experimenting with now. Check out my latest list of cool colour fonts you can play with including some from Google Fonts [Color font list](/posts/color-font-list).
 
 The reason I love Variable color fonts is that they make some of my original experiments in text effects completely obsolete. For me this demonstrates the growth and maturity of the platform and specs and also saves us a lot of time and effort.
 

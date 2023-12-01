@@ -8,10 +8,10 @@ tags:
     - fun
     - list
 featureFont: {
-    font: Irregardless, 
-    author: James Edmondson,
-    license: available to buy,
-    url: https://ohnotype.co/fonts/irregardless,
+    font: Rocher Color, 
+    author: Henrique Beier,
+    license: available for free,
+    url: https://www.harbortype.com/fonts/rocher-color/,
     publisher: OH no Type Co,   
     image: /images/post-assets/color-font/color-font-main.jpg,
     featureAlt: Mixed image featuring Nabla, Rocher Color, Gimme, Merit Badge and Fold It fonts
