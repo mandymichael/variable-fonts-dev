@@ -5,7 +5,8 @@ summary: Variable fonts were a game changer for fonts on the web, but you can ta
 tags:
     - color
     - article
-    - how-to
+    - howto
+    - demo
 featureFont: {
     font: Variable Color Initials, 
     author: Arthur Reinders Folmer,
