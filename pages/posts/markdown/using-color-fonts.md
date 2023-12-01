@@ -6,7 +6,6 @@ tags:
     - color
     - article
     - howto
-    - demo
 featureFont: {
     font: Variable Color Initials, 
     author: Arthur Reinders Folmer,
