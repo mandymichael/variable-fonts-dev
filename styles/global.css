@@ -158,7 +158,8 @@ cite {
 .PostContent .imageContainer::before,
 .codepen::before,
 .PostContent iframe::before,
-.PostContent pre::before {
+.PostContent pre::before,
+.PostContent .videoPlayer::before {
   content: "";
   width: calc(100% + 2rem);
   background: #E9F3F5;
@@ -174,7 +175,8 @@ cite {
   .PostContent .imageContainer::before,
   .codepen::before,
   .PostContent iframe::before,
-  .PostContent pre::before {
+  .PostContent pre::before,
+  .PostContent .videoPlayer::before {
     width: calc(100% + 6rem);
     height: calc(100% + 6rem);
     top: -3rem;
@@ -186,7 +188,8 @@ cite {
 
 .PostContent .imageContainer > img,
 iframe,
-pre {
+pre,
+.PostContent .videoPlayer {
   box-shadow: 0px 10px 20px #17171c75;
   position: relative;
   display: block;
@@ -203,9 +206,14 @@ pre {
   box-shadow: 0px 10px 20px #17171c75;
 }
 
+.PostContent .videoPlayer iframe {
+  margin: 0;
+}
+
 .videoPlayer {
   position: relative;
   padding-top: 56.25%;
+  margin: 6em auto;
 }
 
 .videoPlayer > iframe {
