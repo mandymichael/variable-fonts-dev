@@ -4,9 +4,8 @@ date: '2023-12-01'
 summary: Variable fonts were a game changer for fonts on the web, but you can take it a step further with the addition of the color font spec. Control both the font and the colours of the font truly enabling Photoshop like text effects with real text on the web.
 tags:
     - color
-    - weird
-    - fun
-    - list
+    - article
+    - how-to
 featureFont: {
     font: Variable Color Initials, 
     author: Arthur Reinders Folmer,
