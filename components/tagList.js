@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function TagList({tags, small, filter}) {
 
-    const tagList = filter ? tags.filter(tags => tags !== filter) : tags;
+    const tagList = filter ? tags.filter(tags => tags !== filter).slice(0,3) : tags.slice(0,3);
 
     return (
         <ul className={`${TagListStyles.tags} ${small && TagListStyles.tagsSmall} `}>

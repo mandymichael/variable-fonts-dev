@@ -12,7 +12,7 @@ export default function FeaturedPost({featuredPost}) {
           <article className={PostListStyles.featuredPost}>
               <div className={PostListStyles.featuredPostContent}>                         
                 <p className={PostListStyles.cardMeta}>
-                  <Link href="/lists">Featured Post</Link> <span>&#8212;</span> {featuredPost[0].date && <Date dateString={featuredPost[0].date} /> }
+                  <Link href="/tags/featured">Featured Post</Link> <span>&#8212;</span> {featuredPost[0].date && <Date dateString={featuredPost[0].date} /> }
                 </p>
 
                 <Link href={`/posts/${featuredPost[0].id}`} className={PostListStyles.cardImageMobile}><Image quality={90}  className={PostListStyles.image} loading="eager" width="904" height="495" src={featuredPost[0].card ? featuredPost[0].card.featured : '/images/post-assets/cards/default.jpg'} alt={featuredPost[0].card ? featuredPost[0].card.cardAlt : 'default post image'} /></Link>
