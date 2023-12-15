@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import HeadBlock from "../components/head";
 import Generic from "../styles/Generic.module.css"
 import TextStyles from '../styles/Text.module.css';
