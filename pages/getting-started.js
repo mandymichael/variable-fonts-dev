@@ -12,7 +12,12 @@ import PostContent from '../components/postContent';
 export default function GettingStarted(gettingStarted) {
         return (
             <div className={Generic.pageContainer}>
-                <HeadBlock title="Getting Started" description="How to use variable fonts in your websites and projects including CSS and JavaScript" />
+                <HeadBlock 
+                    title="Getting Started" 
+                    description="How to use variable fonts in your websites and projects including CSS and JavaScript"
+                    url="https://variablefonts.dev/getting-started"
+                    image="/images/metadata/mainog-3.jpg"    
+                />
                 
                 <main className={HomeStyles.main}>
                     <Header/>

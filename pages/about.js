@@ -11,7 +11,7 @@ import Footer from '../components/footer';
 export default function About() { 
     return (
         <div className={Generic.pageContainer}>
-            <HeadBlock title="About" description="About variable fonts for developers" />
+            <HeadBlock title="About" description="About variable fonts for developers" url="https://variablefonts.dev/about" image="/images/metadata/mainog-3.jpg" />
             
             <main className={HomeStyles.main}>
             <Header/>
@@ -27,6 +27,7 @@ export default function About() {
                 <p>Variable fonts give us more control over our Typography. We can now fine tune the font characteristics to maximise the legibility, readability and overall accessibility of our website text. This is a level of control over our fonts that is unprecedented.</p>
                 <p>To be perfectly honest, I just really like variable fonts, I think they are one of the greatest developments for the web so I just wanted a place to share all the things I like doing with them, and maybe some stuff you might enjoy too!</p>
                 <p>This is the second iteration of the website, I had to pause it's development for a while but now it's back with more cool variable fonts and things to do with them than ever.</p>
+                <p>Extra special thanks to <Link href="https://petebarr.com/">Pete Barr</Link> for designing the site for me.</p>
             </section>
 
             </main>

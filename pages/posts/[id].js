@@ -25,6 +25,8 @@ export default function Post({ postData  }) {
         title={postData.title} 
         description={postData.summary}
         url={`/posts/${postData.slug}`} 
+        keywords={postData.tags}
+        image={postData.featureFont.image}
         customStyles={postData.slug === 'roslindale' && 'roslindale'}
       />
       <PostMeta dateTime={postData.date} tags={postData.tags} />

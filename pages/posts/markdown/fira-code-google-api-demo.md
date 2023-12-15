@@ -32,7 +32,7 @@ The [Google Fonts](https://fonts.google.com/) website is a great resource and wi
 
 Well, the good news is, yes, Google Fonts will have variable fonts, and more importantly, they have released an updated version of their API that will enable you to use variable fonts to their full potential.
 
-<div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Animating Fira Code" src="//codepen.io/mandymichael/embed/OJLrgdv/?height=300&theme-id=dark&default-tab=result" frameBorder="no" allowtransparency="true" allowfullScreen="true">
+<div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Animating Fira Code" src="//codepen.io/mandymichael/embed/OJLrgdv/?height=300&theme-id=dark&default-tab=result" frameBorder="no"  allowfullscreen="true">
 </iframe></div>
 
 Google made the announcement of the new API at ATypI Tokyo (2019) and released a [Codepen Demo](https://codepen.io/nlwilliams/full/JjPJewp) with some examples of the currently available variable fonts. I'll do a super quick run down, but Jason Pamental

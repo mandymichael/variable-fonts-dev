@@ -6,9 +6,8 @@ tags:
     - effect
     - creative
     - seasonal
-    - demo
     - article
-    - featured
+    - demo
 featureFont: {
     font: The Man This Monster, 
     author:  John Roshell,
@@ -29,8 +28,6 @@ demo: {
     authorUrl: http://mandy.dev,
     author: Mandy Michael,
 }
-
-
 ---
 
 You'll notice a lot of the examples I show are text effects, and with the holiday season around the corner I've got a few holiday themed effects to share that make the most of variable fonts. 
@@ -39,7 +36,7 @@ I've been making text effects for a long time, and one of the biggest drawbacks 
 
 So for this example we'll be layering the font [This Man This Monster](https://www.comicbookfonts.com/This-Man-This-Monster-font-p/dl291.htm) and instead of having multiple slight different versions we'll adjust the variable font axis to give us the effects we want. There are two versions of this effect, the one below with more perfectly aligned text, and [the simplified one](https://codepen.io/mandymichael/details/WNPEjqa).  I will note that this font was not made to be layered. So it is a little tricky, we'll address that later.
 
-<div class="codepen"><div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Scrolling variable font effect change" src="//codepen.io/mandymichael/embed/XWrBwRL/?height=300&theme-id=dark&default-tab=result" frameBorder="no" allowtransparency="true" allowfullScreen="true"></iframe></div></div>
+<div class="codepen"><div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Scrolling variable font effect change" src="//codepen.io/mandymichael/embed/XWrBwRL/?height=300&theme-id=dark&default-tab=result" frameBorder="no" allowfullscreen="true"></iframe></div></div>
 
 For the purposes of this article we'll use the simplified one, the approach is very similar, just the version above uses the JS library splitting.js to split the characters out into individual spans so I could arrange them more accurately. 
 

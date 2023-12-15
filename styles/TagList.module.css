@@ -11,18 +11,18 @@
 .tags {
     list-style: none;
     display: flex;
-    padding: 0 0 0 1em;
     margin: 0;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .tagsSmall {
     padding: 0;
     margin-bottom: 1em;
+    gap: 0.5rem;
 }
 
-.tag {
-    padding-right: 1em;
-}
+
 
 .tag:not(:last-of-type):after {
     content: "\002F";

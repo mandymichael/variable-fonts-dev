@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-export default function HeadBlock({title, description, url, keywords, customStyles}) {
+export default function HeadBlock({title, description, url, keywords, image, customStyles}) {
 
     return (
         <Head>
@@ -20,7 +20,7 @@ export default function HeadBlock({title, description, url, keywords, customStyl
             <meta property="og:url" content={url} />
             <meta property="og:description" content={description} />
             <meta property="og:type" content="article" />
-            <meta property="og:image" content="/images/metadata/Image.png" />
+            <meta property="og:image" content={image} />
 
             <link rel="icon" href="/favicon.ico" />
 

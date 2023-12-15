@@ -9,11 +9,20 @@ import PostList from '../components/postList';
 import FeaturedPost from '../components/featuredPost';
 import HeadBlock from '../components/head.js';
 
+const description = 'Variable fonts for developers, a collection of fun experiments, effects, demos, articles, font lists, and stuff I have learned as a developer about variable fonts'
+const keywords ='Variable fonts, fonts, font lists, mandy michael'
+
 export default function Home({ recentPosts, articles, fontLists, featuredPost }) {
   return (
     <div className={Generic.pageContainer}>
 
-      <HeadBlock title="Variable Fonts for Developers" />
+      <HeadBlock 
+        title="Variable Fonts for Developers" 
+        description={description}
+        url="https://variablefonts.dev"
+        keywords={keywords}
+        image="/images/metadata/mainog-3.jpg"
+      />
 
       <main className={HomeStyles.main} >
         <Header/>

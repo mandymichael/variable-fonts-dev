@@ -35,7 +35,7 @@ There is a great article about [Decovar back in 2016](https://medium.com/variabl
 [Decovar](https://github.com/googlefonts/decovar)
 
 
-<div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Decovar font demo" src="//codepen.io/mandymichael/embed/YYaWop/?height=300&theme-id=dark&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Decovar font demo" src="//codepen.io/mandymichael/embed/YYaWop/?height=300&theme-id=dark&default-tab=result" frameborder="no" allowfullscreen="true"></iframe></div>
 
 ## Woah  <span class="author">By Scribble Tone</span>
 
@@ -49,7 +49,7 @@ I've made a demo on Codepen using an older version of this font, the newer versi
 
 [Buy Woah](https://www.futurefonts.xyz/scribble-tone/whoa)
 
-<div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Woah font demo" src="//codepen.io/mandymichael/embed/rgwdvL/?height=300&theme-id=dark&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Woah font demo" src="//codepen.io/mandymichael/embed/rgwdvL/?height=300&theme-id=dark&default-tab=result" frameborder="no" allowfullscreen="true"></iframe></div>
 
 ## Cheee  <span class="author">by OhNo Type Co</span>
 
@@ -62,7 +62,7 @@ What I think makes it suitable for my this list of weird variable fonts is by fa
 
 [Buy Cheee](https://www.futurefonts.xyz/ohno/cheee)
 
-<div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Cheee font demo - slime" src="//codepen.io/mandymichael/embed/pxXNbr/?height=300&theme-id=dark&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen"><iframe height="400" style="width: 100%;" scrolling="no" title="Cheee font demo - slime" src="//codepen.io/mandymichael/embed/pxXNbr/?height=300&theme-id=dark&default-tab=result" frameborder="no"  allowfullscreen="true"></iframe></div>
 
 ## Schijn  <span class="author">by Typearture</span>
 

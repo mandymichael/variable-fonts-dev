@@ -6,23 +6,14 @@ tags:
     - width
     - weird
     - list
-featureFont: {
-    font: Irregardless, 
-    author: James Edmondson,
-    license: Paid/Commercial,
-    url: https://ohnotype.co/fonts/irregardless,
-    publisher: OH no Type Co,   
+featureFont: {  
     image: /images/post-assets/Image.png
 }
 card: {
-    cardImage: /images/post-assets/cards/mixed-width.jpg,
+    cardImage: /images/post-assets/cards/weight-range.jpg,
     cardAlt: Bandeins Strange Font showing mixed width character B being stretched wider than the a and c characters
 }
-demo: {
-    url: http://mandy.dev,
-    authorUrl: http://mandy.dev,
-    author: Mandy Michael,
-}
+
 lastUpdated: '2023-11-06'
 ---
 
@@ -31,7 +22,7 @@ A little while ago I was looking for a kooky font to make a text effect with and
 
 ## Irregardless Variable  <span class="author">By James T. Edmondson</span>
 
-![Black and white demo of irregardless with a wide thin and thick weight axis](/images/post-assets/irregardless.png)
+![Black and white demo of irregardless with a wide thin and thick weight axis](/images/post-assets/widths/irregardless.jpg)
 
 Starting off with Irregardless given it was the inspiration for the post. This font is made by the OhNo Type Co foundry. It has a feature setting that allows the use of different character set for certain characters and also have a light to black weight range.
 
@@ -42,7 +33,7 @@ I really like the quirkiness of the design and the big wide rounded letters!
 
 ## Bandeins Strange Variable  <span class="author">By Maximilian Müsgens</span>
 
-![Black and white demo of Bandeins strange character widths](/images/post-assets/bandeinsstrange.png)
+![Black and white demo of Bandeins strange character widths](/images/post-assets/widths/bandeinsstrange.jpg)
 
 Bandeins Strange is the "strange" version of Bandeins Sans, it's width axis allows you to extend some glyphs to exaggerated widths. The above image demonstrates some of the character versions available in the font.
 
@@ -53,7 +44,7 @@ This font is great if you are looking for something a bit more geometric, and, i
 
 ## Widescreen VF  <span class="author">Matt Burvill</span>
 
-![Black and white demo of Widescreen VF mixed character widths](/images/post-assets/widescreenVF.jpg)
+![Black and white demo of Widescreen VF mixed character widths](/images/post-assets/widths/widescreenvf.jpg)
 
 
 Widescreen Vf comes with a Weight, Width and Mixed axis, it mixes normal and ultra wide characters and results in a somewhat sci-fi feel. Having the width and weight axis make implementing the mixed axis even more fun, allowing you to sneak in some mixed usage for more impactful type! 

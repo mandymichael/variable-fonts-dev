@@ -17,7 +17,13 @@ export default function Home({ fontLists, featuredList, displayList }) {
 
   return (
     <div className={Generic.pageContainer}>
-        <HeadBlock title="Font lists" />
+        <HeadBlock 
+            title="Lists of variable fonts" 
+            description="Lists of variable fonts by type, style, feature or category" 
+            url="https://variablefonts.dev/all-font-lists"
+            keywords="Variable fonts, lists, fonts"
+            image="/images/metadata/mainog-1.jpg"
+        />
 
         <main className={HomeStyles.main} >
         <Header/>
@@ -31,7 +37,7 @@ export default function Home({ fontLists, featuredList, displayList }) {
             <div className={`${ContainerStyles.doubleBorderContainer} ${ListPageStyles.tagGroup}`}>
                     <details className={ListPageStyles.tagDetails}>
                     <summary className={`${ListPageStyles.tagDetailsSummary}`}>Tags</summary>
-                    <TagList tags={tags} />
+                    <TagList tags={tags} noSlice={true} />
                 </details>
             </div>
         </section>

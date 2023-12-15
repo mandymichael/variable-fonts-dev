@@ -21,9 +21,8 @@ export default function PostList({posts, title, columns, tagType, postType, show
 
                         {tagType === 'parent' &&
                             <p className={PostListStyles.cardMeta}>
-                                {tags && tags.includes('list') && <Link href="/lists">Font lists</Link>}
-                                {tags &&  tags && tags.includes('demo') && <Link href="/lists">Demos</Link>}
-                                {tags && tags && tags.includes('articles') && <Link href="/lists">Articles</Link>}
+                                {tags && tags.includes('list') && <Link href="/all-font-lists">Font lists</Link>}
+                                {tags && tags && tags.includes('article') && <Link href="/articles">Articles</Link>}
                                 {tagType &&<span>&#8212;</span>} {date && <Date dateString={date} /> }
                             </p>
                         }

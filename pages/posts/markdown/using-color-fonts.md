@@ -6,6 +6,7 @@ tags:
     - color
     - article
     - howto
+    - featured
 featureFont: {
     font: Variable Color Initials, 
     author: Arthur Reinders Folmer,
@@ -15,7 +16,9 @@ featureFont: {
 }
 card: {
     cardImage: /images/post-assets/color-font/jello-card.jpg,
-    cardAlt: Jello "J" color font initial by Typearture
+    cardAlt: Jello "J" color font initial by Typearture,
+     featured: /images/post-assets/color-font/jello-feature.jpg,
+    cardFeaturedSummary: Where variable fonts added new axis to combine multiple font styles into the one file color fonts do a similar thing but with color.
 }
 ---
 
@@ -80,7 +83,7 @@ This will give you the blue palette defined within the font, it looks like the i
 The following image show some of the included palettes for Rocher, but if you don’t like any of the included palettes you can also create your own. I highly recommend you visit the page for Rocher Color to see the animations available as part of the variable font axis.
 
 <div className="videoPlayer">
-<iframe width="1088" height="599" src="https://www.youtube-nocookie.com/embed/x2m_pZO6_w4?si=zq-7e0Lp2QgmA-7d?rel=0&amp;controls=0&amp;showinfo=0&amp;loop=1&amp;playlist=x2m_pZO6_w4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen=true></iframe>
+<iframe width="1088" height="599" src="https://www.youtube-nocookie.com/embed/x2m_pZO6_w4?si=zq-7e0Lp2QgmA-7d?rel=0&amp;controls=0&amp;showinfo=0&amp;loop=1&amp;playlist=x2m_pZO6_w4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
 </div>
 
 The process is similar but you don’t need to define a base-palette, instead you set `override-colors` and define a colour for each of the options in the font, how many colours you have to set will vary between font, in this case we can set 4 colours.
