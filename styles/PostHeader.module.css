@@ -100,3 +100,8 @@
     border-bottom: 1px solid #17171C;
 }
 
+.videoPlayer {
+    position: relative;
+    padding-top: 56.25%;
+    margin: 0 auto;
+}

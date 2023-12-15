@@ -13,7 +13,7 @@ export default function PostHeader({title, summary, featureFont, demo}) {
             }
 
             {featureFont && featureFont.video && 
-                <div className="videoPlayer">
+                <div className={`${PostHeaderStyles.videoPlayer} videoPlayer`}>
                     <iframe width="1088" height="599" src={featureFont.video}  frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
                 </div>
             }
