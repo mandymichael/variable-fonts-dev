@@ -22,7 +22,7 @@ export default function Home({ fontLists, featuredList, displayList }) {
             description="Lists of variable fonts by type, style, feature or category" 
             url="https://variablefonts.dev/all-font-lists"
             keywords="Variable fonts, lists, fonts"
-            image="/images/metadata/mainog-1.jpg"
+            image="/images/metadata/main-og1.jpg"
         />
 
         <main className={HomeStyles.main} >

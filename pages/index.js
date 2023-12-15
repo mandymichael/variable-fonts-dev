@@ -21,7 +21,7 @@ export default function Home({ recentPosts, articles, fontLists, featuredPost })
         description={description}
         url="https://variablefonts.dev"
         keywords={keywords}
-        image="/images/metadata/mainog-3.jpg"
+        image="/images/metadata/main-og3.jpg"
       />
 
       <main className={HomeStyles.main} >

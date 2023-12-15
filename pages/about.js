@@ -12,7 +12,7 @@ import Footer from '../components/footer';
 export default function About() { 
     return (
         <div className={Generic.pageContainer}>
-            <HeadBlock title="About" description="About variable fonts for developers" url="https://variablefonts.dev/about" image="/images/metadata/mainog-3.jpg" />
+            <HeadBlock title="About" description="About variable fonts for developers" url="https://variablefonts.dev/about" image="/images/metadata/main-og3.jpg" />
             
             <main className={HomeStyles.main}>
             <Header/>

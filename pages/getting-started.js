@@ -16,7 +16,7 @@ export default function GettingStarted(gettingStarted) {
                     title="Getting Started" 
                     description="How to use variable fonts in your websites and projects including CSS and JavaScript"
                     url="https://variablefonts.dev/getting-started"
-                    image="/images/metadata/mainog-3.jpg"    
+                    image="/images/metadata/main-og3.jpg"    
                 />
                 
                 <main className={HomeStyles.main}>

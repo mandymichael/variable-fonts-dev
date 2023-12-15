@@ -23,7 +23,7 @@ export default function Home({ articles, featuredList, displayList }) {
             description="Articles about variable font performance, usage, demos and explanations" 
             url="https://variablefonts.dev/articles"
             keywords="Variable fonts, articles, font demos, fonts"
-            image="/images/metadata/mainog-2.jpg"
+            image="/images/metadata/main-og2.jpg"
         />
         <main className={HomeStyles.main} >
             <Header/>
