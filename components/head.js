@@ -27,7 +27,7 @@ export default function HeadBlock({title, description, url, keywords, image, cus
             <meta property="twitter:url" content={url} />
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
-            <meta name="twitter:image" content={`https://variablefonts.dev/${image}`} />
+            <meta name="twitter:image" content={`https://variablefonts.dev${image}`} />
 
 
             <link rel="icon" href="/favicon.ico" />
