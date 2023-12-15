@@ -5,6 +5,7 @@ import Footer from '../../components/footer';
 import HeadBlock from '../../components/head';
 import dynamic from 'next/dynamic';
 import { RoslindaleMouseControl, marqueeScroll } from '../../lib/variablefonts';
+import generateRssFeed from '../../lib/generateRSSFeed';
 
 const PostContent = dynamic(() => import('../../components/postContent'), {
   ssr: true,
@@ -56,6 +57,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
+ 
+  await generateRssFeed();
+
   return {
     props: {
       postData,
