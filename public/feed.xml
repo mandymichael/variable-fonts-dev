@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Variable Fonts for Developers | RSS Feed]]></title>
+        <description><![CDATA[Variable fonts for developers, a collection of fun experiments, effects, demos, articles, font lists, and stuff I have learned as a developer about variable fonts]]></description>
+        <link>https://variablefonts.dev</link>
+        <image>
+            <url>https://variablefonts.dev/favicon-32x32.png</url>
+            <title>Variable Fonts for Developers | RSS Feed</title>
+            <link>https://variablefonts.dev</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Wed, 20 Dec 2023 01:49:24 GMT</lastBuildDate>
+        <atom:link href="https://variablefonts.dev/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Wed, 20 Dec 2023 01:49:24 GMT</pubDate>
+        <copyright><![CDATA[All rights reserved 2023, Mandy Michael]]></copyright>
+    </channel>
+</rss>
