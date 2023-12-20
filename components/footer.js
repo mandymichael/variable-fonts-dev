@@ -14,7 +14,7 @@ export default function Footer() {
                 <nav className={FooterStyles.nav}>
                     <ul className={FooterStyles.navList}>
                         <li className={FooterStyles.navItem}><Link href="/getting-started" className={FooterStyles.navLink}>Getting Started</Link></li>
-                        <li className={FooterStyles.navItem}><Link href="/lists" className={FooterStyles.navLink}>Font Lists</Link></li>
+                        <li className={FooterStyles.navItem}><Link href="/all-font-lists" className={FooterStyles.navLink}>Font Lists</Link></li>
                         <li className={FooterStyles.navItem}><Link href="/articles" className={FooterStyles.navLink}>Articles</Link></li>
                         <li className={FooterStyles.navItem}><Link href="/about" className={FooterStyles.navLink}>About</Link></li>
                         <li className={FooterStyles.navItem}><Link href="https://www.linkedin.com/in/mandykerr" target="_blank" className={FooterStyles.navLink}>Contact</Link></li>
@@ -27,7 +27,7 @@ export default function Footer() {
                 <div className={FooterStyles.social}>
                     <Link href="https://www.linkedin.com/in/mandykerr"><LinkedIn /></Link>
                     <Image src="/images/Jello.png" alt="Jello the Golden Retriever inside two rings" quality={100} width="102" height="120" loading="lazy" />
-                    <Link href="https://www.linkedin.com/in/mandykerr"><Github /></Link>
+                    <Link href="https://github.com/mandymichael"><Github /></Link>
                 </div>
                 <p className={FooterStyles.creator}>Designed by <Link href="https://petebarr.com">Pete Barr</Link></p>
                 </div>
