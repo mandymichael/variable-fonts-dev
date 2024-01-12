@@ -9,10 +9,16 @@
             <link>https://variablefonts.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 20 Dec 2023 01:49:24 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 12 Jan 2024 06:24:33 GMT</lastBuildDate>
         <atom:link href="https://variablefonts.dev/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 20 Dec 2023 01:49:24 GMT</pubDate>
-        <copyright><![CDATA[All rights reserved 2023, Mandy Michael]]></copyright>
+        <pubDate>Fri, 12 Jan 2024 06:24:33 GMT</pubDate>
+        <copyright><![CDATA[All rights reserved 2024, Mandy Michael]]></copyright>
+        <item>
+            <title><![CDATA[Mandy's Variable Font Talks]]></title>
+            <link>https://variablefonts.dev/posts/variable-fonts-talks</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/variable-fonts-talks</guid>
+            <pubDate>Fri, 12 Jan 2024 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[How to use a color font]]></title>
             <link>https://variablefonts.dev/posts/using-color-fonts</link>
