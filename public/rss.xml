@@ -9,12 +9,18 @@
             <link>https://variablefonts.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 12 Jan 2024 06:24:33 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 30 Mar 2024 03:46:22 GMT</lastBuildDate>
         <atom:link href="https://variablefonts.dev/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 12 Jan 2024 06:24:33 GMT</pubDate>
+        <pubDate>Sat, 30 Mar 2024 03:46:22 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2024, Mandy Michael]]></copyright>
         <item>
-            <title><![CDATA[Mandy's Variable Font Talks]]></title>
+            <title><![CDATA[Honk Variable Font]]></title>
+            <link>https://variablefonts.dev/posts/honk-variable-font</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/honk-variable-font</guid>
+            <pubDate>Fri, 29 Mar 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Mandy's Talks about variable fonts]]></title>
             <link>https://variablefonts.dev/posts/variable-fonts-talks</link>
             <guid isPermaLink="true">https://variablefonts.dev/posts/variable-fonts-talks</guid>
             <pubDate>Fri, 12 Jan 2024 00:00:00 GMT</pubDate>
