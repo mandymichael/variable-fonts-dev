@@ -25,7 +25,11 @@ card: {
 
 I'm not sure how long it's been on [Google Fonts](https://fonts.google.com/), but I noticed [Honk](https://fonts.google.com/specimen/Honk) while I was looking for a font to use for a new demo and thought it was super cool and fun! So naturally I immediately stopped everything I was doing and went to have a play and make some demos.
 
- Honk, by [Elk Type](https://ektype.in/) is a fun, bold Variable Color font with a 8 built in colour palettes, which include two colours for the shadow! 
+![Honk variable color font text in pink and yellow with dark long shadow featuring text Jello is a fluffy fellow](/images/post-assets/honk/honk-01.jpg)
+
+Honk, by [Elk Type](https://ektype.in/) is a fun, bold Variable Color font with a 8 built in colour palettes, which include two colours for the shadow! I used [wakamaifondue.com](https://wakamaifondue.com/) to figure out what palettes were available as I couldn't find the information anywhere else. You can do this by downloading the font off Google Fonts and then uploading to the wakamaifondue website. It's a great tool, highly recommend, i've added a screenshot below for reference.
+
+![Available color palettes in Honk](/images/post-assets/honk/honk-02.jpg)
 
 What makes this font amazing is that off the bat it looks loud and bright and in it's base state it's a great font for creating text effects, especially given the shadow and colours are built in. BUT, it takes it a step further by adding a variable axis for morphing the font further. It switches between super ornate, subtle, simple, round, sharp. This font does everything. It's super cool and really fun to play with, a great option if you want something loud and exciting. 
 
