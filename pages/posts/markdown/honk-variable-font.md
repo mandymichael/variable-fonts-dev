@@ -27,7 +27,7 @@ I'm not sure how long it's been on [Google Fonts](https://fonts.google.com/), bu
 
 ![Honk variable color font text in pink and yellow with dark long shadow featuring text Jello is a fluffy fellow](/images/post-assets/honk/honk-01.jpg)
 
-Honk, by [Elk Type](https://ektype.in/) is a fun, bold Variable Color font with a 8 built in colour palettes, which include two colours for the shadow! I used [wakamaifondue.com](https://wakamaifondue.com/) to figure out what palettes were available as I couldn't find the information anywhere else. You can do this by downloading the font off Google Fonts and then uploading to the wakamaifondue website. It's a great tool, highly recommend, i've added a screenshot below for reference.
+Honk, by [Ek Type](https://ektype.in/) is a fun, bold Variable Color font with a 8 built in colour palettes, which include two colours for the shadow! I used [wakamaifondue.com](https://wakamaifondue.com/) to figure out what palettes were available as I couldn't find the information anywhere else. You can do this by downloading the font off Google Fonts and then uploading to the wakamaifondue website. It's a great tool, highly recommend, i've added a screenshot below for reference.
 
 ![Available color palettes in Honk](/images/post-assets/honk/honk-02.jpg)
 
