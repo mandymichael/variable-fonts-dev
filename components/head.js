@@ -30,8 +30,7 @@ export default function HeadBlock({title, description, url, keywords, image, cus
             <meta name="twitter:image" content={`https://variablefonts.dev${image}`} />
 
             <link rel="icon" href="/favicon.ico" />
-
-
+            <link rel="alternate" type="application/rss+xml" title="Variable Fonts for Developers" href="https://variablefonts.dev/rss.xml"></link>
         </Head> 
     )
 }
