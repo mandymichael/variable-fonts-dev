@@ -124,7 +124,7 @@ export default function MandysWebring() {
             }
         }
         
-        window.customElements.define("mandys-webring", WebRing);
+        window.customElements.get('mandys-webring') || window.customElements.define('mandys-webring', WebRing);
         
     }, [])
     return (
