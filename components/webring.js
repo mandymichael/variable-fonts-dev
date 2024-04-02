@@ -39,6 +39,7 @@ export default function MandysWebring() {
         p a:hover {
          color: #5dacbf;
         }
+
         ul {
             list-style: none;
             display: flex;
@@ -67,8 +68,8 @@ export default function MandysWebring() {
         </style>
         
         <aside class="webring">
-          <div id="copy" class="copy">
-            
+          <div id="content" class="copy">
+          
           </div>
         </aside>`;
         
@@ -91,17 +92,18 @@ export default function MandysWebring() {
                         if (prevSiteIndex === -1) prevSiteIndex = sites.length - 1;
         
                         let nextSiteIndex = matchedSiteIndex + 1;
-                        if (nextSiteIndex > sites.length) nextSiteIndex = 0;
-        
-                        const randomSiteIndex = this.getRandomInt(0, sites.length - 1);
+                        if (nextSiteIndex > sites.length - 1) nextSiteIndex = 0;
+
+                        const getRandomNumber = this.getRandomInt(0, sites.length - 1);
+
+                        let randomSiteIndex = getRandomNumber;
+                        if (getRandomNumber === matchedSiteIndex) randomSiteIndex = prevSiteIndex;
         
                         const cp = `
-                 
-                            <h1>Mandy's Webring</h1>
+                          <h1>Mandy's Webring</h1>
                           <p>
                             You are visiting <a href="${matchedSite.url}">${matchedSite.name}</a>  by ${matchedSite.owner}
                           </p>
-        
                           <nav>
                             <ul>
                                 <li><a href="${sites[prevSiteIndex].url}">Prev</a></li>
@@ -109,10 +111,9 @@ export default function MandysWebring() {
                                 <li><a href="${sites[randomSiteIndex].url}">Random</a></li>
                             </ul>
                           </nav>
-        
                         `;
         
-                        this.shadowRoot.querySelector("#copy").insertAdjacentHTML("afterbegin", cp);
+                        this.shadowRoot.querySelector("#content").insertAdjacentHTML("afterbegin", cp);
                     });
             }
         
@@ -127,6 +128,6 @@ export default function MandysWebring() {
         
     }, [])
     return (
-        <mandys-webring site="https://variablefonts.dev"></mandys-webring>
+        <mandys-webring site="https://textlab.dev"></mandys-webring>
     )
   }
