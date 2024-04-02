@@ -4,11 +4,7 @@ import Image from 'next/image';
 import {LinkedIn, Github } from './icons'
 import MandysWebring from './webring';
 
-
 export default function Footer() {
-
-    
-
     return (
         <footer className={FooterStyles.footerContainer}>
             <div className={FooterStyles.footerBlock}>
