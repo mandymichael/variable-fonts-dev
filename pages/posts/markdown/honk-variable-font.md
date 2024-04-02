@@ -23,7 +23,7 @@ card: {
 }
 ---
 
-I'm not sure how long it's been on [Google Fonts](https://fonts.google.com/), but I noticed [Honk](https://fonts.google.com/specimen/Honk) while I was looking for a font to use for a new demo and thought it was super cool and fun! So naturally I immediately stopped everything I was doing and went to have a play and make some demos.
+I'm not sure how long it's been on [Google Fonts](https://fonts.google.com/), but I noticed [Honk](https://fonts.google.com/specimen/Honk) while I was looking for a font to use for a new demo and thought it was super cool and fun! So naturally I immediately stopped everything I was doing and went to have a play and make some demos. Please keep in mind that [COLR fonts are not currently supported in all browsers](https://caniuse.com/colr-v1) so you might find not all demos work correctly, particularly in Safari.
 
 ![Honk variable color font text in pink and yellow with dark long shadow featuring text Jello is a fluffy fellow](/images/post-assets/honk/honk-01.jpg)
 
