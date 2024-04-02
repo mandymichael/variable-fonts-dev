@@ -128,6 +128,6 @@ export default function MandysWebring() {
         
     }, [])
     return (
-        <mandys-webring site="https://textlab.dev"></mandys-webring>
+        <mandys-webring site="https://variablefonts.dev"></mandys-webring>
     )
   }
