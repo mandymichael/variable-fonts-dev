@@ -2,14 +2,21 @@ import FooterStyles from '../styles/Footer.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import {LinkedIn, Github } from './icons'
+import MandysWebring from './webring';
+
 
 export default function Footer() {
+
+    
+
     return (
         <footer className={FooterStyles.footerContainer}>
             <div className={FooterStyles.footerBlock}>
                 <Image src="/images/Logo.svg" alt="Variable Fonts for Developers" className={FooterStyles.logo} width="80" height="80" />
             </div>
-            
+
+            <MandysWebring />
+
             <div className={FooterStyles.footerLinks}>
                 <nav className={FooterStyles.nav}>
                     <ul className={FooterStyles.navList}>
