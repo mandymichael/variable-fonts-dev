@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@next/third-parties": "^14.1.0",
     "date-fns": "^2.30.0",
     "gray-matter": "^4.0.3",
     "next": "^14.0.2",

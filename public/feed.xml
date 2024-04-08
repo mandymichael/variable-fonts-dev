@@ -9,9 +9,111 @@
             <link>https://variablefonts.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 30 Mar 2024 08:21:41 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 02 Apr 2024 12:28:19 GMT</lastBuildDate>
         <atom:link href="https://variablefonts.dev/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 30 Mar 2024 08:21:41 GMT</pubDate>
+        <pubDate>Tue, 02 Apr 2024 12:28:19 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2024, Mandy Michael]]></copyright>
+        <item>
+            <title><![CDATA[Honk Variable Font]]></title>
+            <link>https://variablefonts.dev/posts/honk-variable-font</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/honk-variable-font</guid>
+            <pubDate>Fri, 29 Mar 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Mandy's Talks about variable fonts]]></title>
+            <link>https://variablefonts.dev/posts/variable-fonts-talks</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/variable-fonts-talks</guid>
+            <pubDate>Fri, 12 Jan 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How to use a color font]]></title>
+            <link>https://variablefonts.dev/posts/using-color-fonts</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/using-color-fonts</guid>
+            <pubDate>Fri, 01 Dec 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Sans Serif Google Variable Fonts]]></title>
+            <link>https://variablefonts.dev/posts/google-font-list-1</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/google-font-list-1</guid>
+            <pubDate>Thu, 30 Nov 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Color Font List]]></title>
+            <link>https://variablefonts.dev/posts/color-font-list</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/color-font-list</guid>
+            <pubDate>Thu, 16 Nov 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Cookie Effect layering with Variable Fonts]]></title>
+            <link>https://variablefonts.dev/posts/layering-variable-fonts-cookie</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/layering-variable-fonts-cookie</guid>
+            <pubDate>Tue, 14 Nov 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Mixed width variable fonts]]></title>
+            <link>https://variablefonts.dev/posts/mixed-width-variable-fonts</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/mixed-width-variable-fonts</guid>
+            <pubDate>Mon, 23 Aug 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Fonts with a large weight range]]></title>
+            <link>https://variablefonts.dev/posts/huge-weight-range</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/huge-weight-range</guid>
+            <pubDate>Thu, 18 Mar 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Weird variable fonts]]></title>
+            <link>https://variablefonts.dev/posts/weird-variable-fonts</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/weird-variable-fonts</guid>
+            <pubDate>Tue, 12 Jan 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Variable fonts for text effects]]></title>
+            <link>https://variablefonts.dev/posts/variable-fonts-for-text-effects</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/variable-fonts-for-text-effects</guid>
+            <pubDate>Tue, 10 Nov 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Performance benefits of Variable Fonts]]></title>
+            <link>https://variablefonts.dev/posts/performance-benefits-variable-fonts</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/performance-benefits-variable-fonts</guid>
+            <pubDate>Mon, 09 Mar 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Resize text to fit]]></title>
+            <link>https://variablefonts.dev/posts/resize-to-fit</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/resize-to-fit</guid>
+            <pubDate>Fri, 06 Mar 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Fira Code Google API Demo]]></title>
+            <link>https://variablefonts.dev/posts/fira-code-google-api-demo</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/fira-code-google-api-demo</guid>
+            <pubDate>Fri, 20 Sep 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Scrolling Bloop 'Cheee' Demo]]></title>
+            <link>https://variablefonts.dev/posts/bloop-cheee-demo</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/bloop-cheee-demo</guid>
+            <pubDate>Tue, 17 Sep 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Oozing Dark Mode Text with Chee]]></title>
+            <link>https://variablefonts.dev/posts/ooze-cheee-demo</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/ooze-cheee-demo</guid>
+            <pubDate>Tue, 10 Sep 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Reactive fonts with the Ambient Light Sensor]]></title>
+            <link>https://variablefonts.dev/posts/light-sensor-demo</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/light-sensor-demo</guid>
+            <pubDate>Tue, 11 Jun 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Growing text demo featuring Decovar]]></title>
+            <link>https://variablefonts.dev/posts/grow-decovar-demo</link>
+            <guid isPermaLink="true">https://variablefonts.dev/posts/grow-decovar-demo</guid>
+            <pubDate>Tue, 11 Jun 2019 00:00:00 GMT</pubDate>
+        </item>
     </channel>
 </rss>
